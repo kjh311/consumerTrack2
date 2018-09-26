@@ -6367,9 +6367,10 @@ a,
 a:hover {
   color: #79b74d; }
 
-.btn {
+.btn, .btn:focus {
   background-color: #d0d0d0;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: none; }
 
 body {
   font-size: 16px;

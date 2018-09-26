@@ -35,27 +35,41 @@ function validateNameForm() {
 	    return Math.abs(age_dt.getUTCFullYear() - 1970);
 	}
 
-	// console.log(calculate_age(new Date(bornYear, bornMonth, bornDay)));
-
 	if(calculate_age(new Date(bornYear, bornMonth, bornDay)) < 18){
-		// alert("you must 18 or older to enter");
 		errorText.classList.remove("d-none"); 
     	errorText.classList.add("d-block"); 
 		return false;
 	}
-
-
-
-
-	
-
 	nameFormWrapper.classList.remove("d-block"); 
     nameFormWrapper.classList.add("d-none"); 
     emailWrapper.classList.remove("d-none"); 
     emailWrapper.classList.add("d-block"); 
+}
 
 
+function validateEmailForm(){
 
+	
+	var emailInput = document.getElementById('email-input');
+	var emailAddress = document.getElementById('email-input').value;
+	var acountExistsWarning = document.getElementById("email-error-div");
 
+	if(emailAddress === "testemail@test.com"){
+		acountExistsWarning.classList.remove("invisible");
+		emailInput.style.borderColor = "#df4e60";
+		return false;
+	}
+}
+
+function checkDuplicateEmail(){
+
+	var emailInput = document.getElementById('email-input');
+	var acountExistsWarning = document.getElementById("email-error-div");
+
+	emailInput.style.borderColor = "#e4e4e4"
+
+	if(!acountExistsWarning.classList.contains("invisible")){
+		acountExistsWarning.className += " invisible "
+	}
 
 }

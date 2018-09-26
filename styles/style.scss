@@ -19,9 +19,10 @@ a:hover {
     color: $validated-color;
 }
 
-.btn {
+.btn, .btn:focus {
     background-color: $unvalidated-color;
     cursor: pointer;
+    box-shadow: none;
 }
 
 body {
@@ -628,6 +629,7 @@ header {
                 height: 62px;
                 font-size: 1.45em;
                 padding-top: 0px;
+                // color: $light-font;
                 @include media-breakpoint-up(sm) {
                     margin: 49px 0px 0px 0px;
                     width: 235px;
