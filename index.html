@@ -60,7 +60,7 @@
 						<p class="first-name-text">My first name is...</p>
 
 
-						  <input type="text" id="first-name-input" class="first-name-input text-center" type="text" name="firstname" required  pattern="[A-Za-z]+" oninvalid="addRedBorderName()" oninvalid="setCustomValidity('Please enter a first name. Only letters and no spaces')" onkeypress="removeNameInputBorder()" onchange="try{setCustomValidity('')}catch(e){}" />
+						  <input type="text" id="first-name-input" class="first-name-input text-center" type="text" name="firstname" required  pattern="[A-Za-z]+" oninvalid="addRedBorderName(), setCustomValidity('Please enter a first name. Only letters and no spaces')" onkeypress="removeNameInputBorder()" onchange="try{setCustomValidity('')}catch(e){}" />
 
 						  <p class="born-on-text">I was born on...</p>
 
@@ -68,7 +68,7 @@
 
 
 						  
-						  <select id="month-drop" class="drop month-drop font-italic" name="month" oninvalid="addRedBorderMonthDrop()"  oninvalid="setCustomValidity('Please select a month')" onchange="removeMonthDropRedBorder()" onchange="try{setCustomValidity('')}catch(e){}" required />
+						  <select id="month-drop" class="drop month-drop font-italic" required name="month" oninvalid="addRedBorderMonthDrop()" onchange="removeMonthDropRedBorder()"   />
                                     <option style="display:none" disabled selected value> month </option>
                                     <option value="0">January</option>
                                     <option value="1">February</option>
@@ -88,7 +88,7 @@
 
                                 <i class="fa fa2 fa-2x fa-angle-down" aria-hidden="true"></i>
 
-									<select id="day-drop" class="drop day-drop font-italic" name="day" oninvalid="addRedBorderDayDrop()" oninvalid="setCustomValidity('Please select a day')" onchange="removeDayDropRedBorder()" onchange="try{setCustomValidity('')}catch(e){}" required />
+									<select id="day-drop" class="drop day-drop font-italic" name="day" oninvalid="addRedBorderDayDrop()" onchange="removeDayDropRedBorder()" onchange="try{setCustomValidity('')}catch(e){}" required />
 										<option  style="display:none" disabled selected value>  day </option>
 										<option value="1">1</option>
 										<option value="2">2</option>
@@ -129,7 +129,7 @@
 								
 									<i class="fa fa3 fa-2x fa-angle-down" aria-hidden="true"></i>
 
-									<select  id="year-drop" class="drop year-drop font-italic" name="year"  oninvalid="addRedBorderYearDrop()" oninvalid="setCustomValidity('Please select a year')" onchange="removeYearDropRedBorder()" onchange="try{setCustomValidity('')}catch(e){}" required />
+									<select  id="year-drop" class="drop year-drop font-italic" name="year" oninvalid="addRedBorderYearDrop()" onchange="removeYearDropRedBorder()" onchange="try{setCustomValidity('')}catch(e){}" required />
 										<option  style="display:none" disabled selected value>year</option>
 										<option value="2017">2017</option>
 										<option value="2016">2016</option>

@@ -291,6 +291,9 @@ header {
                     margin: 10px 0px 0px 0px;
                 }
             }
+            .first-name-input-error{
+            	color: $error-font;
+            }
             .born-on-text {
                 letter-spacing: 1.2px;
                 font-size: 1.4em;

@@ -6591,6 +6591,8 @@ header {
           width: 400px;
           height: 46px;
           margin: 10px 0px 0px 0px; } }
+    .second .form-wrapper .name-form-div .first-name-input-error {
+      color: #df4e60; }
     .second .form-wrapper .name-form-div .born-on-text {
       letter-spacing: 1.2px;
       font-size: 1.4em;
