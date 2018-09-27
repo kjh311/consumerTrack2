@@ -19,9 +19,11 @@ a:hover {
     color: $validated-color;
 }
 
-.btn, .btn:focus {
+.btn,
+.btn:focus {
     background-color: $unvalidated-color;
     cursor: pointer;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -31,23 +33,21 @@ body {
 }
 
 .container-fluid {
-    // @extend %color-border;
-    // height: 100px;
     max-width: 1200px;
 }
 
 .exponent {
     font-size: 35px;
     color: $light-font;
-    position: absolute; // margin: -22px 0px 0px 3px;
+    position: absolute; 
     @include media-breakpoint-up(sm) {
-        font-size: 20px; // margin: -15px 0px 0px 135px;
+        font-size: 20px; 
     }
     @include media-breakpoint-up(md) {
-        font-size: 42px; // margin: -23px 0px 0px 247px;
+        font-size: 42px; 
     }
     @include media-breakpoint-up(lg) {
-        font-size: 53px; // margin: -30px 0px 0px 330px;
+        font-size: 53px; 
     }
 }
 
@@ -58,45 +58,45 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
+    -o-text-overflow: '';
     text-overflow: '';
     background-color: $clear;
-    outline: none; // color: $light-font;
+    outline: none; 
     @include media-breakpoint-up(sm) {
         border-radius: 5px;
         border: 1px solid $border-color;
     }
 }
 
-// input:invalid { 
-//     border: 2px solid red;
-// }
-
-.no-opacity{
-	opacity: 0;
-	-webkit-transition: opacity 0.5s ease-in;
-		       -moz-transition: opacity 0.5s ease-in;
-		        -ms-transition: opacity 0.5s ease-in;
-		         -o-transition: opacity 0.5s ease-in;
-		            transition: opacity 0.5s ease-in;
+.no-opacity {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
-.opacity{
-	opacity: 1;
-	-webkit-transition: opacity 0.5s ease-in;
-		       -moz-transition: opacity 0.5s ease-in;
-		        -ms-transition: opacity 0.5s ease-in;
-		         -o-transition: opacity 0.5s ease-in;
-		            transition: opacity 0.5s ease-in;
+.opacity {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
 .blinking-text {
-	animation: blinker 1s linear 2;
+    -webkit-animation: blinker 1s linear 2;
+    animation: blinker 1s linear 2;
+}
+
+@-webkit-keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 @keyframes blinker {
-  50% {
-    opacity: 0;
-  }
+    50% {
+        opacity: 0;
+    }
 }
 
 .name-form-submit-button:hover,
@@ -114,10 +114,6 @@ select {
     background: $validated-hover;
 }
 
-// input:required:invalid {
-//   border: 1px solid red;
-//   outline: none;
-// }
 
 
 //////////
@@ -179,10 +175,8 @@ header {
 .second {
     padding: 19px 18px 65px 18px;
     max-width: 370px;
-
-
     @include media-breakpoint-up(sm) {
-        padding: 18px 15px 35px 15px; // max-width: 370px;
+        padding: 18px 15px 35px 15px; 
     }
     @include media-breakpoint-up(md) {
         max-width: 700px;
@@ -190,10 +184,10 @@ header {
     }
     @include media-breakpoint-up(lg) {
         max-width: 1100px;
-        padding: 67px 15px 109px 0px; // margin: 0px 10px 0px 10px;
+        padding: 67px 15px 109px 0px; 
     }
     .form-wrapper {
-        // @extend %color-border;
+
         height: 792px;
         max-width: 354px;
         margin-top: 18px;
@@ -201,7 +195,7 @@ header {
         @include media-breakpoint-up(sm) {
             max-width: 290px;
             height: 482px;
-            margin-top: 0px; // margin-left: 57px;
+            margin-top: 0px; 
         }
         @include media-breakpoint-up(md) {
             max-width: 300px;
@@ -209,18 +203,15 @@ header {
             height: 505px;
         }
         @include media-breakpoint-up(lg) {
-            // width: 400px;
-            max-width: 490px;
-            // flex-shrink: 3;
-            // -webkit-flex-shrink: 3; 
+            max-width: 490px; 
             margin-left: 7px;
             height: 633px;
         }
-        /////////////
-        //NAME FORM//
-        /////////////
+
+/////////////
+//NAME FORM//
+/////////////
         .name-form-div {
-            // color: $light-font;
             @include media-breakpoint-up(sm) {
                 padding: 32px 15px 0px 15px;
             }
@@ -291,8 +282,8 @@ header {
                     margin: 10px 0px 0px 0px;
                 }
             }
-            .first-name-input-error{
-            	color: $error-font;
+            .first-name-input-error {
+                color: $error-font;
             }
             .born-on-text {
                 letter-spacing: 1.2px;
@@ -306,17 +297,16 @@ header {
                 }
                 @include media-breakpoint-up(md) {
                     font-size: 0.85em;
-                    margin: 29px 0px 0px 0px; // letter-spacing: 0px;
+                    margin: 29px 0px 0px 0px; 
                 }
                 @include media-breakpoint-up(lg) {
                     font-size: 1.15em;
-                    margin: 39px 0px 0px 0px; // letter-spacing: 0px;
-                    // letter-spacing: 1px;
+                    margin: 39px 0px 0px 0px; 
                 }
             }
             .drop {
                 color: $light-font;
-                height: 52px; // padding-left: 60px;
+                height: 52px; 
                 font-size: 1.4em;
                 font-weight: 200;
                 letter-spacing: 1.5px;
@@ -326,12 +316,11 @@ header {
                     letter-spacing: 0px;
                 }
                 @include media-breakpoint-up(md) {
-                    height: 33px; // font-size: 0.9em;
-                    // letter-spacing: 0px;
+                    height: 33px; 
                 }
                 @include media-breakpoint-up(lg) {
                     height: 44px;
-                    font-size: 1.15em; // letter-spacing: 0px;
+                    font-size: 1.15em; 
                 }
             }
             .month-drop {
@@ -348,13 +337,13 @@ header {
                 @include media-breakpoint-up(md) {
                     margin: 7px 0px 0px 0px;
                     width: 110px;
-                    left: 25px; // position: absolute;
+                    left: 25px; 
                     text-indent: 5px;
                 }
                 @include media-breakpoint-up(lg) {
                     margin: 9px 0px 0px 0px;
                     width: 147px;
-                    left: 77px; // position: absolute;
+                    left: 77px; 
                     text-indent: 7px;
                 }
             }
@@ -363,7 +352,6 @@ header {
                 width: 150px;
                 text-indent: 12px;
                 @include media-breakpoint-up(sm) {
-                    // margin: 7px 0px 0px 5px;
                     width: 55px;
                     margin: 6px 0px 0px 0px;
                     right: 94px;
@@ -373,8 +361,7 @@ header {
                 @include media-breakpoint-up(md) {
                     width: 58px;
                     margin: 7px 0px 0px 0px;
-                    right: 97px; // position: absolute;
-                    // text-indent: 3px;
+                    right: 97px; 
                 }
                 @include media-breakpoint-up(lg) {
                     width: 78px;
@@ -388,7 +375,6 @@ header {
                 width: 150px;
                 text-indent: 20px;
                 @include media-breakpoint-up(sm) {
-                    // margin: 7px 0px 0px 5px;
                     width: 65px;
                     margin: 6px 0px 0px 0px;
                     right: 23px;
@@ -405,7 +391,7 @@ header {
                     margin: 9px 0px 0px 0px;
                     right: 78px;
                     text-indent: 5px;
-                } // margin-left: 10px;
+                } 
             }
             .retire-drop {
                 margin: 12px 0px 0px 4px;
@@ -422,7 +408,7 @@ header {
                 @include media-breakpoint-up(md) {
                     margin: 8px 0px 0px 6px;
                     width: 58px;
-                    height: 32px; // text-indent: 8px;
+                    height: 32px; 
                 }
                 @include media-breakpoint-up(lg) {
                     margin: 10px 0px 0px 3px;
@@ -430,24 +416,16 @@ header {
                     height: 42px;
                     text-indent: 13px;
                 }
-            } // .day-year-drop-div{
-            // 	// @extend %color-border;
-            // 	// margin-left: 7px;
-            // 	max-width: 307px;
-            // 	// padding-bottom: 50px;
-            // }
+            }
+
             .fa {
                 position: absolute;
-                z-index: -10; // color: $light-font;
+                z-index: -10; 
                 @include media-breakpoint-up(sm) {
-                    margin: 0px 0px 0px 5px; // margin-top: -10px;
-                    // display: none;
+                    margin: 0px 0px 0px 5px; 
                     font-size: 1.4em;
                 }
                 @include media-breakpoint-up(lg) {
-                    // margin: 0px 0px 0px 5px;
-                    // margin-top: -10px;
-                    // display: none;
                     font-size: 2em;
                 }
             }
@@ -501,22 +479,19 @@ header {
                 margin: 37px 0px 0px 0px;
                 letter-spacing: 0.9px;
                 @include media-breakpoint-up(sm) {
-                    // margin: 12px 0px 0px 100px;
                     font-size: 0.8em;
                     letter-spacing: 0px;
                     margin-top: 42px;
                 }
                 @include media-breakpoint-up(md) {
-                    // margin: 12px 0px 0px 100px;
                     font-size: 0.8em;
                     letter-spacing: 0.2px;
-                    margin: 45px 20px 0px 20px; // max-width: 200px;
+                    margin: 45px 20px 0px 20px;
                 }
                 @include media-breakpoint-up(lg) {
-                    // margin: 12px 0px 0px 100px;
                     font-size: 1.15em;
                     letter-spacing: 0.1px;
-                    margin: 67px 10px 0px 5px; // max-width: 200px;
+                    margin: 67px 10px 0px 5px; 
                 }
             }
             .name-form-submit-button {
@@ -540,45 +515,35 @@ header {
                 @include media-breakpoint-up(md) {
                     margin: 34px 0px 0px 0px;
                     width: 129px;
-                    height: 36px; // font-size: 0.95em;
-                    // padding-top: 3px;
-                    // border-radius: 3px;
-                    // letter-spacing: 0px;
+                    height: 36px; 
                 }
                 @include media-breakpoint-up(lg) {
                     margin: 40px 0px 0px -2px;
                     width: 173px;
                     height: 49px;
                     font-size: 1.3em;
-                    padding-top: 4px; // border-radius: 10px;
+                    padding-top: 4px; 
                     letter-spacing: 0.8px;
                 }
             }
-            .age-error-text{
-            	color: $error-font;
-            	font-size: 1.2em;
-            	margin: 10px 0px 0px 0px;
-
-            	// opacity: 1;
-            	
-            	@include media-breakpoint-up(sm) {
-            		font-size: 0.9em;
-            		// margin: 10px 0px 0px 0px;
-            	}
-	            @include media-breakpoint-up(md) {
-	            	font-size: 1.1em;
-	            }
-	            @include media-breakpoint-up(lg) {
-	            	font-size: 1.4em;
-	            }
+            .age-error-text {
+                color: $error-font;
+                font-size: 1.2em;
+                margin: 10px 0px 0px 0px; 
+                @include media-breakpoint-up(sm) {
+                    font-size: 0.9em; 
+                }
+                @include media-breakpoint-up(md) {
+                    font-size: 1.1em;
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.4em;
+                }
             }
-
-        }
-        //////////////
+        } //////////////
         //EMAIL FORM//
         //////////////
         .email-form-div {
-            // color: $light-font;
             @include media-breakpoint-up(sm) {}
             @include media-breakpoint-up(md) {}
             @include media-breakpoint-up(lg) {}
@@ -586,7 +551,7 @@ header {
                 font-size: 1.8em;
                 margin: 63px 20px 0px 20px;
                 letter-spacing: 1px;
-                line-height: 41px; // @extend %color-border;
+                line-height: 41px;
                 @include media-breakpoint-up(sm) {
                     font-size: 1.2em;
                     margin: 34px 0px 0px 0px;
@@ -608,21 +573,19 @@ header {
                 }
             }
             .why-create-account-text {
-                font-size: 1.2em; // width: 330px;
-                // @extend %color-border;
+                font-size: 1.2em; 
                 margin: 18px 0px 0px 0px;
-                line-height: 34px; // letter-spacing: 0px;
+                line-height: 34px; 
                 @include media-breakpoint-up(sm) {
-                    // width: 240px;
                     font-size: 0.8em;
                     margin: 7px 9px 0px 9px;
-                    line-height: 21px; // letter-spacing: 0px;
+                    line-height: 21px; 
                 }
                 @include media-breakpoint-up(md) {
                     font-size: 0.8em;
                     margin: 7px 0px 0px -11px;
                     line-height: 22px;
-                    width: 290px; // letter-spacing: 0.3px;
+                    width: 290px; 
                 }
                 @include media-breakpoint-up(lg) {
                     font-size: 1.2em;
@@ -636,8 +599,7 @@ header {
                 width: 303px;
                 height: 62px;
                 font-size: 1.45em;
-                padding-top: 0px;
-                // color: $light-font;
+                padding-top: 0px; 
                 @include media-breakpoint-up(sm) {
                     margin: 49px 0px 0px 0px;
                     width: 235px;
@@ -659,56 +621,51 @@ header {
                     padding-bottom: 3px;
                 }
             }
-            .email-error-div{
-            	// @extend %color-border;
-            	margin: 0px 20px 0px 20px;
-            	color: $error-font;
-            	font-weight: 200;
-            	@include media-breakpoint-up(sm) {
-            		margin: 0px 12px 0px 12px;
-				}
-				@include media-breakpoint-up(md) {
-				}
-				@include media-breakpoint-up(lg) {
-				}
-            	
-            	.email-error-text{
-            		font-size: 1.04em;
-            		margin: 13px 0px 0px 7px;
-            		line-height: 22px;
-            		@include media-breakpoint-up(sm) {
-            			font-size: 0.635em;
-            			margin: 4px 0px 0px 2px;
-					}
-					@include media-breakpoint-up(md) {
-						font-size: 0.665em;
-            			margin: 5px 0px 0px 2px;
-					}
-					@include media-breakpoint-up(lg) {
-						font-size: 0.88em;
-            			margin: 11px 0px 0px 5px;
-					}
+            .email-error-div {
+                margin: 0px 20px 0px 20px;
+                color: $error-font;
+                font-weight: 200;
+                @include media-breakpoint-up(sm) {
+                    margin: 0px 12px 0px 12px;
+                }
+                @include media-breakpoint-up(md) {}
+                @include media-breakpoint-up(lg) {}
 
-            	}
-            	.exclamation{
-            		width: 25px;
-            		height: 23px;
-            		margin: 10px 0px 0px 3px;
-            		@include media-breakpoint-up(sm) {
-	            		width: 15px;
-	            		height: 15px;
-	            		margin: 8px 0px 0px -2px;
-					}
-					@include media-breakpoint-up(md) {
-						margin: 9px 0px 0px -1px;
-					}
-					@include media-breakpoint-up(lg) {
-						width: 20px;
-	            		height: 20px;
-	            		margin: 12px 0px 0px -16px;
-					}
-
-            	}
+                .email-error-text {
+                    font-size: 1.04em;
+                    margin: 13px 0px 0px 7px;
+                    line-height: 22px;
+                    @include media-breakpoint-up(sm) {
+                        font-size: 0.635em;
+                        margin: 4px 0px 0px 2px;
+                    }
+                    @include media-breakpoint-up(md) {
+                        font-size: 0.665em;
+                        margin: 5px 0px 0px 2px;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        font-size: 0.88em;
+                        margin: 11px 0px 0px 5px;
+                    }
+                }
+                .exclamation {
+                    width: 25px;
+                    height: 23px;
+                    margin: 10px 0px 0px 3px;
+                    @include media-breakpoint-up(sm) {
+                        width: 15px;
+                        height: 15px;
+                        margin: 8px 0px 0px -2px;
+                    }
+                    @include media-breakpoint-up(md) {
+                        margin: 9px 0px 0px -1px;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        width: 20px;
+                        height: 20px;
+                        margin: 12px 0px 0px -16px;
+                    }
+                }
             }
             .email-form-submit-btn {
                 margin: 48px 0px 0px 2px;
@@ -748,32 +705,26 @@ header {
                     font-size: 0.57em;
                 }
                 @include media-breakpoint-up(md) {
-                    margin: 12px 0px 0px 2px; // letter-spacing: 0.012em;
+                    margin: 12px 0px 0px 2px; 
                     font-size: 0.6em;
                 }
                 @include media-breakpoint-up(lg) {
-                    margin: 15px 0px 0px 2px; // letter-spacing: 0.012em;
+                    margin: 15px 0px 0px 2px; 
                     font-size: 0.83em;
                 }
             }
         }
-    }
-    ///////////////   
-    //PIG WRAPPER//
-    ///////////////
+    } 
+
+///////////////   
+//PIG WRAPPER//
+///////////////
     .pig-wrapper {
-        // max-width: 100%;
-        // @extend %color-border;
         @include media-breakpoint-up(md) {
-            max-width: 300px; // margin-left: 30px;
+            max-width: 300px; 
         }
         @include media-breakpoint-up(lg) {
-            // width: 540px;
-            max-width: 540px;
-            // flex-shrink: 3;
-            // -webkit-flex-shrink: 3; 
-            // margin-left: 0px; // height: 600px;
-            // padding: 0px;
+            max-width: 540px; 
         }
         .checkup-text {
             color: $dark-font;
@@ -790,7 +741,7 @@ header {
                 line-height: 29px;
             }
             @include media-breakpoint-up(md) {
-                margin-top: 30px; // max-width: 225px;
+                margin-top: 30px; 
                 font-size: 3em;
                 text-align: left;
                 text-align-last: left;
@@ -799,20 +750,14 @@ header {
                 line-height: 56px;
             }
             @include media-breakpoint-up(lg) {
-                // text-align: center;
-                //   	text-align-last: center; 
                 font-size: 4.2em;
                 margin-top: 38px;
                 line-height: 76px;
                 letter-spacing: 2px;
-                font-weight: 500;
-    //             overflow: hidden;
-				// text-overflow: ellipsis;
-				// white-space: nowrap;
+                font-weight: 500; //             
             }
         }
         .stacks-text {
-            // color: $light-font;
             font-size: 1.15em;
             text-align: justify;
             text-justify: inter-word;
@@ -849,11 +794,11 @@ header {
     border-top: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
     padding: 56px 0px 41px 0px;
-    max-width: 350px; // color: $light-font;
+    max-width: 350px; 
     // pa
     @include media-breakpoint-up(sm) {
         max-width: 370px;
-        padding: 48px 0px 33px 0px; // margin-left: 5px;
+        padding: 48px 0px 33px 0px; 
     }
     @include media-breakpoint-up(md) {
         max-width: 545px;
@@ -870,7 +815,7 @@ header {
         @include media-breakpoint-up(sm) {
             font-size: 1.25em;
             letter-spacing: 1.2px;
-            padding: 0px 0px 0px 1px; // left: 2px;
+            padding: 0px 0px 0px 1px;
         }
         @include media-breakpoint-up(md) {
             font-size: 1.35em;
@@ -901,7 +846,7 @@ header {
         }
         @include media-breakpoint-up(lg) {
             font-size: 0.99em;
-            line-height: 28px; // padding: 3px;
+            line-height: 28px; 
             padding-top: 5px;
         }
     }
@@ -911,14 +856,14 @@ header {
 //fourth-container//
 ///////////////////
 .fourth {
-    // @extend %color-border;
+
     padding: 44px 0px 0px 0px;
 
     width: 235px;
     color: $dark-font;
     @include media-breakpoint-up(sm) {
         width: 275px;
-        padding: 49px 0px 0px 5px; // left: 12px;
+        padding: 49px 0px 0px 5px; 
     }
     @include media-breakpoint-up(md) {
         width: 475px;
@@ -966,20 +911,14 @@ header {
             margin: 39px 0px 0px -4px;
         }
         .exponent {
-            // font-size: 35px;
-            // color: $light-font;
-            // position: absolute;
             margin: -22px 0px 0px 3px;
             @include media-breakpoint-up(sm) {
-                // font-size: 20px;
                 margin: -15px 0px 0px 135px;
             }
             @include media-breakpoint-up(md) {
-                // font-size: 42px;
                 margin: -23px 0px 0px 247px;
             }
             @include media-breakpoint-up(lg) {
-                // font-size: 53px;
                 margin: -30px 0px 0px 330px;
             }
         }
@@ -989,7 +928,7 @@ header {
         margin-top: 15px;
         line-height: 40px;
         border-bottom: 1px solid $border-color;
-        padding-bottom: 86px; // @extend %color-border;
+        padding-bottom: 86px;
         @include media-breakpoint-up(sm) {
             font-size: 1.8em;
             margin-top: -26px;
@@ -1009,7 +948,7 @@ header {
             padding-bottom: 52px;
         }
         @include media-breakpoint-up(lg) {
-            width: 390px; // margin-left: 5px;
+            width: 390px; 
             padding: 33px 0px 78px 5px;
             letter-spacing: 0.5px;
         }
@@ -1020,7 +959,7 @@ header {
 //fifth-container//
 ///////////////////
 .fifth {
-    // @extend %color-border;
+
     color: $dark-font;
     width: 360px;
     padding-bottom: 48px;
@@ -1070,12 +1009,12 @@ header {
             margin: 5px 0px 0px -7px;
         }
         @include media-breakpoint-up(md) {
-            font-size: 5.2em; // font-weight: 500;
+            font-size: 5.2em; 
             margin: 3px 0px 0px 0px;
             letter-spacing: 1px;
         }
         @include media-breakpoint-up(lg) {
-            font-size: 6.7em; // font-weight: 500;
+            font-size: 6.7em; 
             margin: 8px 0px 0px 17px;
             letter-spacing: 5px;
         }
@@ -1118,95 +1057,72 @@ header {
 //sixth-container//
 ///////////////////
 .sixth {
-    // @extend %color-border;
+
     width: 320px;
     height: 434px;
     @include media-breakpoint-up(sm) {
-    	width: 370px;
-    	height: 223px;
+        width: 370px;
+        height: 223px;
     }
     @include media-breakpoint-up(md) {
-    	width: 500px;
-    	height: 301px;
+        width: 500px;
+        height: 301px;
     }
     @include media-breakpoint-up(lg) {
-    	width: 962px;
-    	height: 263px;
+        width: 962px;
+        height: 263px;
     }
     .employees-text {
-        // @extend %color-border;
-        // max-width: 50vw;
         font-size: 2em;
         font-weight: 500;
         letter-spacing: 1.7px;
         margin: 48px 0px 0px 0px;
         line-height: 44px;
         @include media-breakpoint-up(sm) {
-        	font-size: 1.2em;
-        	line-height: 27px;
-        	margin: 42px 0px 0px 0px;
-        	letter-spacing: 0.2px;
+            font-size: 1.2em;
+            line-height: 27px;
+            margin: 42px 0px 0px 0px;
+            letter-spacing: 0.2px;
         }
         @include media-breakpoint-up(md) {
-        	font-size: 1.9em;
-        	line-height: 42px;
-        	margin: 72px 0px 0px 0px;
-        	letter-spacing: 1.8px;
+            font-size: 1.9em;
+            line-height: 42px;
+            margin: 72px 0px 0px 0px;
+            letter-spacing: 1.8px;
         }
         @include media-breakpoint-up(lg) {
-        	font-size: 2.5em;
-        	// line-height: 42px;
-        	margin: 108px 0px 0px 10px;
-        	letter-spacing: 2.8px;
+            font-size: 2.5em;
+            margin: 108px 0px 0px 10px;
+            letter-spacing: 2.8px;
         }
     }
     .logos-wrapper {
-        margin: 40px 0px 0px 0px; // @extend %color-border;
-        // flex-wrap: wrap;
-        // width: 320px;
-        @include media-breakpoint-up(sm) {}
-        @include media-breakpoint-up(md) {}
+        margin: 40px 0px 0px 0px; 
         @include media-breakpoint-up(lg) {
-        	margin: 75px 0px 0px 0px;
+            margin: 75px 0px 0px 0px;
         }
         ul {
-            list-style: none; // flex-wrap: wrap;
+            list-style: none; 
             padding: 0px 0px 0px 0px;
-            @include media-breakpoint-up(sm) {}
-            @include media-breakpoint-up(md) {}
-            @include media-breakpoint-up(lg) {
-            	// position: initial;
-            	// display: flex;
-            	// justify-content: space-between;
-            	// margin: auto;
-            }
         }
         .logo {
             position: absolute;
-            @include media-breakpoint-up(sm) {}
-            @include media-breakpoint-up(md) {}
-            @include media-breakpoint-up(lg) {
-            	// position: initial;
-            	// display: flex;
-            	// justify-content: space-around;
-            	// margin: auto;
-            }
         }
         .linkedin-logo {
             width: 137px;
             margin: 3px 0px 0px -10px;
 
             @include media-breakpoint-up(sm) {
-            	width: 83px;
-            	margin: 6px 0px 0px -5px;
+                width: 83px;
+                margin: 6px 0px 0px -5px;
             }
             @include media-breakpoint-up(md) {
-            	width: 88px;
-            	margin: 9px 0px 0px 50px;
+                width: 88px;
+                margin: 9px 0px 0px 50px;
             }
             @include media-breakpoint-up(lg) {
-            	margin: 0px 0px 0px 2px;
-            	width: 122px;
+                margin: 0px 0px 0px 2px;
+                width: 122px;
             }
         }
         .amazon-logo {
@@ -1214,16 +1130,16 @@ header {
             margin: 3px 0px 0px 150px;
 
             @include media-breakpoint-up(sm) {
-            	width: 90px;
-            	margin: 6px 0px 0px 151px;
+                width: 90px;
+                margin: 6px 0px 0px 151px;
             }
             @include media-breakpoint-up(md) {
-            	width: 95px;
-            	margin: 10px 0px 0px 214px;
+                width: 95px;
+                margin: 10px 0px 0px 214px;
             }
             @include media-breakpoint-up(lg) {
-            	margin: 0px 0px 0px 226px;
-            	width: 129px;
+                margin: 0px 0px 0px 226px;
+                width: 129px;
             }
         }
         .apple-logo {
@@ -1231,16 +1147,16 @@ header {
             margin: 83px 0px 0px 21px;
 
             @include media-breakpoint-up(sm) {
-            	width: 33px;
-            	margin: -3px 0px 0px 313px;
+                width: 33px;
+                margin: -3px 0px 0px 313px;
             }
             @include media-breakpoint-up(md) {
-            	width: 34px;
-            	margin: -1px 0px 0px 384px;
+                width: 34px;
+                margin: -1px 0px 0px 384px;
             }
             @include media-breakpoint-up(lg) {
-            	margin: -14px 0px 0px 460px;
-            	width: 46px;
+                margin: -14px 0px 0px 460px;
+                width: 46px;
             }
         }
         .cisco-logo {
@@ -1248,33 +1164,32 @@ header {
             margin: 87px 0px 0px 153px;
 
             @include media-breakpoint-up(sm) {
-            	width: 70px;
-            	margin: 51px 0px 0px 78px;
+                width: 70px;
+                margin: 51px 0px 0px 78px;
             }
             @include media-breakpoint-up(md) {
-            	width: 73px;
-            	margin: 69px 0px 0px 116px;
+                width: 73px;
+                margin: 69px 0px 0px 116px;
             }
             @include media-breakpoint-up(lg) {
-            	margin: -10px 0px 0px 610px;
-            	width: 100px;
-
+                margin: -10px 0px 0px 610px;
+                width: 100px;
             }
         }
         .oracle-logo {
             width: 140px;
             margin: 192px 0px 0px 75px;
             @include media-breakpoint-up(sm) {
-            	width: 88px;
-            	margin: 62px 0px 0px 220px;
+                width: 88px;
+                margin: 62px 0px 0px 220px;
             }
             @include media-breakpoint-up(md) {
-            	width: 88px;
-            	margin: 81px 0px 0px 265px;
+                width: 88px;
+                margin: 81px 0px 0px 265px;
             }
             @include media-breakpoint-up(lg) {
-            	margin: 1px 0px 0px 815px;
-            	width: 123px;
+                margin: 1px 0px 0px 815px;
+                width: 123px;
             }
         }
     }
@@ -1284,70 +1199,66 @@ header {
 //footer//
 //////////
 .footer {
-	// @extend %color-border;
+
     border-top: 1px solid $border-color;
     width: 100vw;
     @include media-breakpoint-up(sm) {
-    	width: 405px;
-    	max-width: 90vw;
-	}
-	@include media-breakpoint-up(md) {
-		width: 575px;
-	}
-	@include media-breakpoint-up(lg) {
-		width: 1130px;
-	}
-    .numbers-text{
-    	font-size: 0.85em;
-    	margin: 14px 0px 0px -15px;
-    	@include media-breakpoint-up(sm) {
-    		font-size: 0.5em;
-    		margin: 8px 0px 0px 0px;
-		}
-		@include media-breakpoint-up(md) {
-			margin: 9px 0px 0px 0px;
-			letter-spacing: 0.1px;
-		}
-		@include media-breakpoint-up(lg) {
-			font-size: 0.7em;
-    		margin: 15px 0px 0px 0px;
-		}
-
+        width: 405px;
+        max-width: 90vw;
     }
-    .copyright-text{
+    @include media-breakpoint-up(md) {
+        width: 575px;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 1130px;
+    }
+    .numbers-text {
+        font-size: 0.85em;
+        margin: 14px 0px 0px -15px;
+        @include media-breakpoint-up(sm) {
+            font-size: 0.5em;
+            margin: 8px 0px 0px 0px;
+        }
+        @include media-breakpoint-up(md) {
+            margin: 9px 0px 0px 0px;
+            letter-spacing: 0.1px;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 0.7em;
+            margin: 15px 0px 0px 0px;
+        }
+    }
+    .copyright-text {
+        font-size: 0.85em;
+        margin: 29px 0px 0px 7px;
+        @include media-breakpoint-up(sm) {
+            font-size: 0.5em;
+            margin: 9px 0px 0px 15px;
+        }
+        @include media-breakpoint-up(md) {
+            margin: 9px 0px 0px 15px;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 0.7em;
+            margin: 17px 0px 0px 20px;
+        }
 
-    	font-size: 0.85em;
-    	margin: 29px 0px 0px 7px;
-    	@include media-breakpoint-up(sm) {
-    		font-size: 0.5em;
-    		margin: 9px 0px 0px 15px;
-		}
-		@include media-breakpoint-up(md) {
-			margin: 9px 0px 0px 15px;
-		}
-		@include media-breakpoint-up(lg) {
-			font-size: 0.7em;
-			margin: 17px 0px 0px 20px;
-		}
-		
-
-    	.copy-symbol{
-    		position: absolute;
-    		font-size: 1.4em;
-    		margin: -5px 0px 0px -69px;
-    		@include media-breakpoint-up(sm) {
-    			margin: -4px 0px 0px -42px;
-    			font-size: 1.5em;
-			}
-			@include media-breakpoint-up(md) {
-				font-size: 1.6em;
-				margin: -5px 0px 0px -44px;
-			}
-			@include media-breakpoint-up(lg) {
-				font-size: 1.5em;
-				margin: -5px 0px 0px -59px;
-			}
-
-    	}
+        .copy-symbol {
+            position: absolute;
+            font-size: 1.4em;
+            margin: -5px 0px 0px -69px;
+            @include media-breakpoint-up(sm) {
+                margin: -4px 0px 0px -42px;
+                font-size: 1.5em;
+            }
+            @include media-breakpoint-up(md) {
+                font-size: 1.6em;
+                margin: -5px 0px 0px -44px;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 1.5em;
+                margin: -5px 0px 0px -59px;
+            }
+        }
     }
 }

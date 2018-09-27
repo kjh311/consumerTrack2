@@ -6367,9 +6367,11 @@ a,
 a:hover {
   color: #79b74d; }
 
-.btn, .btn:focus {
+.btn,
+.btn:focus {
   background-color: #d0d0d0;
   cursor: pointer;
+  -webkit-box-shadow: none;
   box-shadow: none; }
 
 body {
@@ -6400,6 +6402,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
+  -o-text-overflow: '';
   text-overflow: '';
   background-color: rgba(0, 0, 0, 0);
   outline: none; }
@@ -6412,22 +6415,22 @@ select {
 .no-opacity {
   opacity: 0;
   -webkit-transition: opacity 0.5s ease-in;
-  -moz-transition: opacity 0.5s ease-in;
-  -ms-transition: opacity 0.5s ease-in;
   -o-transition: opacity 0.5s ease-in;
   transition: opacity 0.5s ease-in; }
 
 .opacity {
   opacity: 1;
   -webkit-transition: opacity 0.5s ease-in;
-  -moz-transition: opacity 0.5s ease-in;
-  -ms-transition: opacity 0.5s ease-in;
   -o-transition: opacity 0.5s ease-in;
   transition: opacity 0.5s ease-in; }
 
 .blinking-text {
+  -webkit-animation: blinker 1s linear 2;
   animation: blinker 1s linear 2; }
 
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0; } }
 @keyframes blinker {
   50% {
     opacity: 0; } }

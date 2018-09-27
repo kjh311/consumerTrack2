@@ -59,15 +59,12 @@
 						
 						<p class="first-name-text">My first name is...</p>
 
-
-						  <input type="text" id="first-name-input" class="first-name-input text-center" type="text" name="firstname" required  pattern="[A-Za-z]+" oninvalid="addRedBorderName(), setCustomValidity('Please enter a first name. Only letters and no spaces')" onkeypress="removeNameInputBorder()" onchange="try{setCustomValidity('')}catch(e){}" />
+						  <input type="text" id="first-name-input" class="first-name-input text-center" type="text" name="firstname"   pattern="[A-Za-z]+" oninvalid="addRedBorderName(), setCustomValidity('Please enter a first name. Only letters and no spaces')" onkeypress="removeNameInputBorder()" onchange="try{setCustomValidity('')}catch(e){}" />
 
 						  <p class="born-on-text">I was born on...</p>
 
 						  <i class="fa fa1 fa-2x fa-angle-down" aria-hidden="true"></i>
 
-
-						  
 						  <select id="month-drop" class="drop month-drop font-italic" required name="month" oninvalid="addRedBorderMonthDrop()" onchange="removeMonthDropRedBorder()"   />
                                     <option style="display:none" disabled selected value> month </option>
                                     <option value="0">January</option>
@@ -83,8 +80,6 @@
                                     <option value="10">November</option>
                                     <option value="11">December</option>
                                 </select>
-
-                            <!-- </br> -->
 
                                 <i class="fa fa2 fa-2x fa-angle-down" aria-hidden="true"></i>
 
@@ -123,10 +118,6 @@
 										<option value="31">31</option>
 									</select>
 
-									
-										
-									
-								
 									<i class="fa fa3 fa-2x fa-angle-down" aria-hidden="true"></i>
 
 									<select  id="year-drop" class="drop year-drop font-italic" name="year" oninvalid="addRedBorderYearDrop()" onchange="removeYearDropRedBorder()" onchange="try{setCustomValidity('')}catch(e){}" required />
@@ -254,7 +245,6 @@
 									</br>
 
 								<p class="alarm-font">I'd like to smash my alarm clock (retire) at age...</p>
-                                <!-- </br> -->
 
                                 <i class="fa fa4 fa-2x fa-angle-down" aria-hidden="true"></i>
 
@@ -326,7 +316,6 @@
 					<p class="have-account-text text-center">Already have an account? <a href="" title="">Sign In.</a></p>
 
 					
-					
 				</div>
 			</div>
 
@@ -337,9 +326,7 @@
 				<div class="pig-logo-wrapper d-flex justify-content-center ">
 					<img class="pig-logo d-none d-md-block" src="assets/pig-plain.png" alt="pig logo">
 				</div>
-				
 			</div>
-			
 		</div>
 	</div>
 
@@ -383,12 +370,10 @@
 		<div class="copyright-text d-flex justify-content-center"><span class="copy-symbol">&copy;</span> 2018 blooom, inc.</div>
 	</footer>
 
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
