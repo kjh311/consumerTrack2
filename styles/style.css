@@ -6401,39 +6401,21 @@ select {
   border: 2px solid #e4e4e4;
   -webkit-appearance: none;
   -moz-appearance: none;
-  text-indent: 1px;
+  padding-left: 1px;
   -o-text-overflow: '';
   text-overflow: '';
   background-color: rgba(0, 0, 0, 0);
-  outline: none; }
+  outline: none;
+  font-weight: 500; }
   @media (min-width: 576px) {
     input,
     select {
       border-radius: 5px;
       border: 1px solid #e4e4e4; } }
 
-.no-opacity {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in;
-  -o-transition: opacity 0.5s ease-in;
-  transition: opacity 0.5s ease-in; }
+select::-ms-expand {
+  display: none; }
 
-.opacity {
-  opacity: 1;
-  -webkit-transition: opacity 0.5s ease-in;
-  -o-transition: opacity 0.5s ease-in;
-  transition: opacity 0.5s ease-in; }
-
-.blinking-text {
-  -webkit-animation: blinker 1s linear 2;
-  animation: blinker 1s linear 2; }
-
-@-webkit-keyframes blinker {
-  50% {
-    opacity: 0; } }
-@keyframes blinker {
-  50% {
-    opacity: 0; } }
 .name-form-submit-button:hover,
 .email-form-submit-btn:hover {
   background-color: #9e9e9e; }
@@ -6537,8 +6519,7 @@ header {
       margin-top: 50px;
       color: #3a3a3a;
       line-height: 40px;
-      text-align: justify;
-      text-justify: inter-word;
+      font-weight: 500;
       text-align-last: justify;
       font-size: 1.8em; }
       @media (min-width: 576px) {
@@ -6634,7 +6615,7 @@ header {
           font-size: 1.15em; } }
     .second .form-wrapper .name-form-div .month-drop {
       width: 305px;
-      text-indent: 12px;
+      padding-left: 12px;
       margin: -5px 0px 0px 5px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .month-drop {
@@ -6642,30 +6623,30 @@ header {
           width: 105px;
           left: 25px;
           position: absolute;
-          text-indent: 5px; } }
+          padding-left: 5px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .month-drop {
           margin: 7px 0px 0px 0px;
           width: 110px;
           left: 25px;
-          text-indent: 5px; } }
+          padding-left: 5px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .month-drop {
           margin: 9px 0px 0px 0px;
           width: 147px;
           left: 77px;
-          text-indent: 7px; } }
+          padding-left: 7px; } }
     .second .form-wrapper .name-form-div .day-drop {
       margin: 9px 0px 0px 5px;
       width: 150px;
-      text-indent: 12px; }
+      padding-left: 12px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .day-drop {
           width: 55px;
           margin: 6px 0px 0px 0px;
           right: 94px;
           position: absolute;
-          text-indent: 3px; } }
+          padding-left: 3px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .day-drop {
           width: 58px;
@@ -6676,18 +6657,18 @@ header {
           width: 78px;
           margin: 9px 0px 0px 0px;
           right: 176px;
-          text-indent: 6px; } }
+          padding-left: 6px; } }
     .second .form-wrapper .name-form-div .year-drop {
       margin-top: 8px;
       width: 150px;
-      text-indent: 20px; }
+      padding-left: 20px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .year-drop {
           width: 65px;
           margin: 6px 0px 0px 0px;
           right: 23px;
           position: absolute;
-          text-indent: 3px; } }
+          padding-left: 3px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .year-drop {
           width: 68px;
@@ -6698,7 +6679,7 @@ header {
           width: 90px;
           margin: 9px 0px 0px 0px;
           right: 78px;
-          text-indent: 5px; } }
+          padding-left: 5px; } }
     .second .form-wrapper .name-form-div .retire-drop {
       margin: 12px 0px 0px 4px;
       width: 92px;
@@ -6723,6 +6704,8 @@ header {
           padding-left: 13px; } }
     .second .form-wrapper .name-form-div .fa {
       position: absolute;
+      right: 0;
+      left: 0;
       z-index: -10; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .fa {
@@ -6732,46 +6715,49 @@ header {
         .second .form-wrapper .name-form-div .fa {
           font-size: 2em; } }
     .second .form-wrapper .name-form-div .fa1 {
-      margin: 4px 0px 0px 269px; }
+      margin: 5px 0px 0px 240px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .fa1 {
-          margin: 12px 0px 0px -37px; } }
+          margin: 10px 0px 0px -58px; } }
+      @media (min-width: 768px) {
+        .second .form-wrapper .name-form-div .fa1 {
+          margin: 12px 0px 0px -60px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .fa1 {
-          margin: 15px 0px 0px -53px; } }
+          margin: 15px 0px 0px -83px; } }
     .second .form-wrapper .name-form-div .fa2 {
-      margin: 65px 0px 0px -195px; }
+      margin: 66px 0px 0px -61px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .fa2 {
-          margin: 12px 0px 0px 30px; } }
+          margin: 12px 0px 0px 75px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .fa2 {
-          margin: 12px 0px 0px 32px; } }
+          margin: 12px 0px 0px 77px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .fa2 {
-          margin: 15px 0px 0px 39px; } }
+          margin: 15px 0px 0px 99px; } }
     .second .form-wrapper .name-form-div .fa3 {
-      margin: 18px 0px 0px 110px; }
+      margin: 18px 0px 0px 245px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .fa3 {
-          margin: 12px 0px 0px 100px; } }
+          margin: 11px 0px 0px 215px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .fa3 {
-          margin: 12px 0px 0px 105px; } }
+          margin: 12px 0px 0px 222px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .fa3 {
-          margin: 15px 0px 0px 137px; } }
+          margin: 15px 0px 0px 294px; } }
     .second .form-wrapper .name-form-div .fa4 {
-      margin: 20px 0px 0px 62px; }
+      margin: 21px 0px 0px 46px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .fa4 {
-          margin: 10px 0px 0px 40px; } }
+          margin: 10px 0px 0px 32px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .fa4 {
-          margin: 13px 0px 0px 41px; } }
+          margin: 13px 0px 0px 31px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .fa4 {
-          margin: 15px 0px 0px 50px; } }
+          margin: 15px 0px 0px 41px; } }
     .second .form-wrapper .name-form-div .alarm-font {
       font-size: 1.3em;
       margin: 37px 0px 0px 0px;
@@ -6843,7 +6829,8 @@ header {
         .second .form-wrapper .email-form-div .first-things-text {
           font-size: 1.2em;
           margin: 34px 0px 0px 0px;
-          line-height: 30px; } }
+          line-height: 30px;
+          letter-spacing: 0.9px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .email-form-div .first-things-text {
           font-size: 1.4em;
@@ -6908,66 +6895,74 @@ header {
     .second .form-wrapper .email-form-div .email-error-div {
       margin: 0px 20px 0px 20px;
       color: #df4e60;
-      font-weight: 200; }
+      font-weight: 200;
+      position: relative; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .email-error-div {
           margin: 0px 12px 0px 12px; } }
       .second .form-wrapper .email-form-div .email-error-div .email-error-text {
+        position: absolute;
+        white-space: nowrap;
+        left: 0;
+        right: 0;
         font-size: 1.04em;
-        margin: 13px 0px 0px 7px;
+        margin: 13px 0px 0px 32px;
         line-height: 22px; }
         @media (min-width: 576px) {
           .second .form-wrapper .email-form-div .email-error-div .email-error-text {
             font-size: 0.635em;
-            margin: 4px 0px 0px 2px; } }
+            margin: 4px 0px 0px 18px; } }
         @media (min-width: 768px) {
           .second .form-wrapper .email-form-div .email-error-div .email-error-text {
             font-size: 0.665em;
-            margin: 5px 0px 0px 2px; } }
+            margin: 5px 0px 0px 19px; } }
         @media (min-width: 992px) {
           .second .form-wrapper .email-form-div .email-error-div .email-error-text {
             font-size: 0.88em;
-            margin: 11px 0px 0px 5px; } }
+            margin: 11px 0px 0px 75px; } }
       .second .form-wrapper .email-form-div .email-error-div .exclamation {
+        position: absolute;
+        left: 0;
+        right: 0;
         width: 25px;
         height: 23px;
-        margin: 10px 0px 0px 3px; }
+        margin: 10px 0px 0px 2px; }
         @media (min-width: 576px) {
           .second .form-wrapper .email-form-div .email-error-div .exclamation {
             width: 15px;
             height: 15px;
-            margin: 8px 0px 0px -2px; } }
+            margin: 8px 0px 0px 0px; } }
         @media (min-width: 768px) {
           .second .form-wrapper .email-form-div .email-error-div .exclamation {
-            margin: 9px 0px 0px -1px; } }
+            margin: 9px 0px 0px 0px; } }
         @media (min-width: 992px) {
           .second .form-wrapper .email-form-div .email-error-div .exclamation {
             width: 20px;
             height: 20px;
-            margin: 12px 0px 0px -16px; } }
+            margin: 12px 0px 0px 50px; } }
     .second .form-wrapper .email-form-div .email-form-submit-btn {
-      margin: 48px 0px 0px 2px;
+      margin: 105px 0px 0px 2px;
       width: 202px;
       height: 57px;
       font-size: 1.6em;
       padding-top: 0px; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .email-form-submit-btn {
-          margin: 38px 0px 0px 1px;
+          margin: 64px 0px 0px 1px;
           width: 123px;
           height: 35px;
           font-size: 0.95em;
           padding-top: 2px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .email-form-div .email-form-submit-btn {
-          margin: 33px 0px 0px 2px;
+          margin: 60px 0px 0px 2px;
           width: 130px;
           height: 36px;
           font-size: 1em;
           padding-top: 3px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .email-form-div .email-form-submit-btn {
-          margin: 39px 0px 0px 1px;
+          margin: 73px 0px 0px 1px;
           width: 173px;
           height: 49px;
           font-size: 1.4em;
@@ -6996,25 +6991,21 @@ header {
       max-width: 540px; } }
   .second .pig-wrapper .checkup-text {
     color: #3a3a3a;
-    font-size: 2.1em;
-    text-align: justify;
-    text-justify: inter-word;
-    text-align-last: justify;
-    line-height: 47px; }
+    font-weight: 600;
+    font-size: 2.2em;
+    line-height: 47px;
+    text-align-last: justify; }
     @media (min-width: 576px) {
       .second .pig-wrapper .checkup-text {
-        font-size: 1.6em;
-        text-align: center;
         text-align-last: center;
+        font-size: 1.6em;
         letter-spacing: 1.5px;
         line-height: 29px; } }
     @media (min-width: 768px) {
       .second .pig-wrapper .checkup-text {
+        text-align-last: left;
         margin-top: 30px;
         font-size: 3em;
-        text-align: left;
-        text-align-last: left;
-        text-justify: initial;
         letter-spacing: 1px;
         line-height: 56px; } }
     @media (min-width: 992px) {
@@ -7026,8 +7017,6 @@ header {
         font-weight: 500; } }
   .second .pig-wrapper .stacks-text {
     font-size: 1.15em;
-    text-align: justify;
-    text-justify: inter-word;
     text-align-last: justify; }
     @media (min-width: 576px) {
       .second .pig-wrapper .stacks-text {
