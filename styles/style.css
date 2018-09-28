@@ -6354,7 +6354,7 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 .mockup {
-  z-index: 10;
+  z-index: -10;
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -7017,6 +7017,7 @@ header {
         letter-spacing: 2px;
         font-weight: 500; } }
   .second .pig-wrapper .stacks-text {
+    white-space: nowrap;
     font-size: 1.15em;
     text-align-last: justify; }
     @media (min-width: 576px) {

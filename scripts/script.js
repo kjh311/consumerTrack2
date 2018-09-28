@@ -87,7 +87,7 @@ function removeEmailInputBorder(){
        // if (emailInput.validity.valid === true) {
          emailInput.style.borderColor = "#e4e4e4"
          if(!acountExistsWarning.classList.contains("invisible")){
-			acountExistsWarning.className += " invisible "
+			acountExistsWarning.classList.add("invisible");
 		// }
        // }
     }

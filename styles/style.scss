@@ -752,6 +752,8 @@ header {
             }
         }
         .stacks-text {
+        	// @extend %color-border;
+        	white-space: nowrap;
             font-size: 1.15em;
             // text-align: justify;
             // text-justify: inter-word;

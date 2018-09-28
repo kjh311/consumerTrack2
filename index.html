@@ -59,7 +59,7 @@
 						
 						<p class="first-name-text">My first name is...</p>
 
-						  <input type="text" id="first-name-input" class="first-name-input text-center" type="text" name="firstname"  required pattern="[A-Za-z]+" oninvalid="addRedBorderName(), setCustomValidity('Please enter a first name. Only letters and no spaces')" onkeypress="removeNameInputBorder()" onchange="try{setCustomValidity('')}catch(e){}" />
+						  <input type="text" id="first-name-input" class="first-name-input text-center" type="text" name="firstname"  required pattern="[A-Za-z]+" oninvalid="addRedBorderName(), setCustomValidity('Please enter a first name. Only letters and no spaces')" onkeyup="removeNameInputBorder()" onchange="try{setCustomValidity('')}catch(e){}" />
 
 						  <p class="born-on-text">I was born on...</p>
 
@@ -302,7 +302,7 @@
 
 					<form id="email-form" class="email-form" action="" method="" accept-charset="utf-8"  onsubmit="return validateEmailForm();return false;">
 						<div class="d-flex justify-content-center">
-							<input oninvalid="addRedBorderEmail()" id="email-input" class="email-input text-center" type="email" name="Email address" placeholder="Email address"  required onkeypress="removeEmailInputBorder()">
+							<input oninvalid="addRedBorderEmail()" id="email-input" class="email-input text-center" type="email" name="Email address" placeholder="Email address"  required onkeyup="removeEmailInputBorder()">
 						</div>
 						<div id="email-error-div" class="email-error-div d-flex justify-content-center invisible">
 								<img class="exclamation" src="assets/exclamation.png" alt="exclamation sign">
