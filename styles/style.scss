@@ -1063,8 +1063,9 @@ header {
         height: 263px;
     }
     .employees-text {
+    	// @extend %color-border;
         font-size: 2em;
-        font-weight: 500;
+        // font-weight: 500;
         letter-spacing: 1.7px;
         margin: 48px 0px 0px 0px;
         line-height: 44px;
@@ -1072,7 +1073,7 @@ header {
             font-size: 1.2em;
             line-height: 27px;
             margin: 42px 0px 0px 0px;
-            letter-spacing: 0.2px;
+            letter-spacing: 0.9px;
         }
         @include media-breakpoint-up(md) {
             font-size: 1.9em;
@@ -1081,7 +1082,7 @@ header {
             letter-spacing: 1.8px;
         }
         @include media-breakpoint-up(lg) {
-            font-size: 2.5em;
+            font-size: 2.55em;
             margin: 108px 0px 0px 10px;
             letter-spacing: 2.8px;
         }
@@ -1192,6 +1193,7 @@ header {
 
     border-top: 1px solid $border-color;
     width: 100vw;
+    position: relative;
     @include media-breakpoint-up(sm) {
         width: 405px;
         max-width: 90vw;
@@ -1204,7 +1206,7 @@ header {
     }
     .numbers-text {
         font-size: 0.85em;
-        margin: 14px 0px 0px -15px;
+        margin: 14px 0px 0px -14px;
         @include media-breakpoint-up(sm) {
             font-size: 0.5em;
             margin: 8px 0px 0px 0px;
@@ -1220,7 +1222,7 @@ header {
     }
     .copyright-text {
         font-size: 0.85em;
-        margin: 29px 0px 0px 7px;
+        margin: 29px 0px 0px 5px;
         @include media-breakpoint-up(sm) {
             font-size: 0.5em;
             margin: 9px 0px 0px 15px;
@@ -1234,20 +1236,22 @@ header {
         }
 
         .copy-symbol {
-            position: absolute;
             font-size: 1.4em;
-            margin: -5px 0px 0px -69px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: -6px 0px 0px -130px;
             @include media-breakpoint-up(sm) {
-                margin: -4px 0px 0px -42px;
+                margin: -4px 0px 0px -68px;
                 font-size: 1.5em;
             }
             @include media-breakpoint-up(md) {
                 font-size: 1.6em;
-                margin: -5px 0px 0px -44px;
+                margin: -5px 0px 0px -70px;
             }
             @include media-breakpoint-up(lg) {
                 font-size: 1.5em;
-                margin: -5px 0px 0px -59px;
+                margin: -5px 0px 0px -99px;
             }
         }
     }
