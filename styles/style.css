@@ -6354,7 +6354,7 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 .mockup {
-  z-index: 10;
+  z-index: -10;
   opacity: 0.5;
   position: absolute;
   top: 0;
@@ -6369,21 +6369,21 @@ a:hover {
 
 .btn,
 .btn:focus {
-  background-color: #d0d0d0;
-  cursor: pointer;
   -webkit-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  background-color: #d0d0d0;
+  cursor: pointer; }
 
 body {
-  font-size: 16px;
-  color: #8e8e8e; }
+  color: #8e8e8e;
+  font-size: 16px; }
 
 .container-fluid {
   max-width: 1200px; }
 
 .exponent {
-  font-size: 35px;
   color: #8e8e8e;
+  font-size: 35px;
   position: absolute; }
   @media (min-width: 576px) {
     .exponent {
@@ -6397,16 +6397,16 @@ body {
 
 input,
 select {
+  -moz-appearance: none;
+  -o-text-overflow: '';
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 8px;
   border: 2px solid #e4e4e4;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 1px;
-  -o-text-overflow: '';
-  text-overflow: '';
-  background-color: rgba(0, 0, 0, 0);
+  font-weight: 500;
   outline: none;
-  font-weight: 500; }
+  padding-left: 1px;
+  text-overflow: ''; }
   @media (min-width: 576px) {
     input,
     select {
@@ -6456,28 +6456,28 @@ header {
         height: 52px;
         margin: 9px 0px 0px 28px; } }
   header .rates-logo {
-    width: 227px;
     height: 38px;
-    margin-top: -3px; }
+    margin-top: -3px;
+    width: 227px; }
     @media (min-width: 576px) {
       header .rates-logo {
-        width: 140px;
         height: 30px;
-        margin-top: -3px; } }
+        margin-top: -3px;
+        width: 140px; } }
     @media (min-width: 768px) {
       header .rates-logo {
-        width: 147px;
         height: 26px;
-        margin-top: -7px; } }
+        margin-top: -7px;
+        width: 147px; } }
     @media (min-width: 992px) {
       header .rates-logo {
-        width: 195px;
         height: 33px;
-        margin: 19px 20px 0px 0px; } }
+        margin: 19px 20px 0px 0px;
+        width: 195px; } }
 
 .second {
-  padding: 19px 18px 65px 18px;
-  max-width: 370px; }
+  max-width: 370px;
+  padding: 19px 18px 65px 18px; }
   @media (min-width: 576px) {
     .second {
       padding: 18px 15px 35px 15px; } }
@@ -6490,25 +6490,25 @@ header {
       max-width: 1100px;
       padding: 67px 15px 109px 0px; } }
   .second .form-wrapper {
+    border: 2px solid #e4e4e4;
     height: 792px;
-    max-width: 354px;
     margin-top: 18px;
-    border: 2px solid #e4e4e4; }
+    max-width: 354px; }
     @media (min-width: 576px) {
       .second .form-wrapper {
-        max-width: 290px;
         height: 482px;
-        margin-top: 0px; } }
+        margin-top: 0px;
+        max-width: 290px; } }
     @media (min-width: 768px) {
       .second .form-wrapper {
-        max-width: 300px;
+        height: 505px;
         margin-left: 57px;
-        height: 505px; } }
+        max-width: 300px; } }
     @media (min-width: 992px) {
       .second .form-wrapper {
-        max-width: 490px;
+        height: 633px;
         margin-left: -35px;
-        height: 633px; } }
+        max-width: 490px; } }
     @media (min-width: 576px) {
       .second .form-wrapper .name-form-div {
         padding: 32px 15px 0px 15px; } }
@@ -6517,37 +6517,37 @@ header {
         padding: 32px 4px 0px 4px; } }
     .second .form-wrapper .name-form-div .esp-text {
       white-space: nowrap;
-      margin-top: 50px;
       color: #3a3a3a;
-      line-height: 40px;
+      font-size: 1.8em;
       font-weight: 500;
-      text-align-last: justify;
-      font-size: 1.8em; }
+      line-height: 40px;
+      margin-top: 50px;
+      text-align-last: justify; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .esp-text {
           font-size: 1.3em;
-          margin-top: 0px;
-          line-height: 30px; } }
+          line-height: 30px;
+          margin-top: 0px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .esp-text {
           font-size: 1.4em;
-          margin-top: 4px;
-          line-height: 31px; } }
+          line-height: 31px;
+          margin-top: 4px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .esp-text {
           font-size: 1.9em;
-          margin: 6px 50px 0px 50px;
-          line-height: 42px; } }
+          line-height: 42px;
+          margin: 6px 50px 0px 50px; } }
     .second .form-wrapper .name-form-div .first-name-text {
-      margin: 50px 0px 0px 0px;
-      letter-spacing: 1px;
       font-size: 1.4em;
-      font-weight: 200; }
+      font-weight: 200;
+      letter-spacing: 1px;
+      margin: 50px 0px 0px 0px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .first-name-text {
           font-size: 0.8em;
-          margin-top: 30px;
-          letter-spacing: 0px; } }
+          letter-spacing: 0px;
+          margin-top: 30px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .first-name-text {
           font-size: 0.85em;
@@ -6557,37 +6557,37 @@ header {
           font-size: 1.15em;
           margin-top: 41px; } }
     .second .form-wrapper .name-form-div .first-name-input {
-      margin-top: 9px;
       height: 55px;
-      width: 95%;
-      text-transform: capitalize; }
+      margin-top: 9px;
+      text-transform: capitalize;
+      width: 95%; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .first-name-input {
-          width: 236px;
           height: 33px;
-          margin: 7px 0px 0px -4px; } }
+          margin: 7px 0px 0px -4px;
+          width: 236px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .first-name-input {
-          width: 246px;
           height: 35px;
-          margin: 6px 0px 0px 2px; } }
+          margin: 6px 0px 0px 2px;
+          width: 246px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .first-name-input {
-          width: 400px;
           height: 46px;
-          margin: 10px 0px 0px 0px; } }
+          margin: 10px 0px 0px 0px;
+          width: 400px; } }
     .second .form-wrapper .name-form-div .first-name-input-error {
       color: #df4e60; }
     .second .form-wrapper .name-form-div .born-on-text {
-      letter-spacing: 1.2px;
       font-size: 1.4em;
       font-weight: 200;
+      letter-spacing: 1.2px;
       margin-top: 37px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .born-on-text {
           font-size: 0.8em;
-          margin: 28px 0px 0px 0px;
-          letter-spacing: 0px; } }
+          letter-spacing: 0px;
+          margin: 28px 0px 0px 0px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .born-on-text {
           font-size: 0.85em;
@@ -6598,111 +6598,111 @@ header {
           margin: 39px 0px 0px 0px; } }
     .second .form-wrapper .name-form-div .drop {
       color: #8e8e8e;
-      height: 52px;
       font-size: 1.4em;
       font-weight: 200;
+      height: 52px;
       letter-spacing: 1.5px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .drop {
-          height: 32px;
           font-size: 0.9em;
+          height: 32px;
           letter-spacing: 0px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .drop {
           height: 33px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .drop {
-          height: 44px;
-          font-size: 1.15em; } }
+          font-size: 1.15em;
+          height: 44px; } }
     .second .form-wrapper .name-form-div .month-drop {
-      width: 95%;
+      margin: -5px 0px 0px 5px;
       padding-left: 12px;
-      margin: -5px 0px 0px 5px; }
+      width: 95%; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .month-drop {
-          margin: 6px 0px 0px 0px;
-          width: 105px;
           left: 25px;
+          margin: 6px 0px 0px 0px;
+          padding-left: 5px;
           position: absolute;
-          padding-left: 5px; } }
+          width: 105px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .month-drop {
-          margin: 7px 0px 0px 0px;
-          width: 110px;
           left: 25px;
-          padding-left: 5px; } }
+          margin: 7px 0px 0px 0px;
+          padding-left: 5px;
+          width: 110px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .month-drop {
-          margin: 9px 0px 0px 0px;
-          width: 147px;
           left: 77px;
-          padding-left: 7px; } }
+          margin: 9px 0px 0px 0px;
+          padding-left: 7px;
+          width: 147px; } }
     .second .form-wrapper .name-form-div .day-drop {
       margin: 9px 0px 0px 5px;
-      width: 47%;
-      padding-left: 12px; }
+      padding-left: 12px;
+      width: 47%; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .day-drop {
-          width: 55px;
           margin: 6px 0px 0px 0px;
-          right: 94px;
+          padding-left: 3px;
           position: absolute;
-          padding-left: 3px; } }
+          right: 94px;
+          width: 55px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .day-drop {
-          width: 58px;
           margin: 7px 0px 0px 0px;
-          right: 97px; } }
+          right: 97px;
+          width: 58px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .day-drop {
-          width: 78px;
           margin: 9px 0px 0px 0px;
+          padding-left: 6px;
           right: 176px;
-          padding-left: 6px; } }
+          width: 78px; } }
     .second .form-wrapper .name-form-div .year-drop {
       margin-top: 8px;
-      width: 47%;
-      padding-left: 20px; }
+      padding-left: 20px;
+      width: 47%; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .year-drop {
-          width: 65px;
           margin: 6px 0px 0px 0px;
-          right: 23px;
+          padding-left: 3px;
           position: absolute;
-          padding-left: 3px; } }
+          right: 23px;
+          width: 65px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .year-drop {
-          width: 68px;
           margin: 7px 0px 0px 0px;
-          right: 23px; } }
+          right: 23px;
+          width: 68px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .year-drop {
-          width: 90px;
           margin: 9px 0px 0px 0px;
+          padding-left: 5px;
           right: 78px;
-          padding-left: 5px; } }
+          width: 90px; } }
     .second .form-wrapper .name-form-div .retire-drop {
-      margin: 12px 0px 0px 4px;
-      width: 92px;
       height: 50px;
-      padding-left: 15px; }
+      margin: 12px 0px 0px 4px;
+      padding-left: 15px;
+      width: 92px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .retire-drop {
-          margin: 6px 0px 0px 7px;
-          width: 56px;
           height: 30px;
-          padding-left: 8px; } }
+          margin: 6px 0px 0px 7px;
+          padding-left: 8px;
+          width: 56px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .retire-drop {
+          height: 32px;
           margin: 8px 0px 0px 6px;
-          width: 58px;
-          height: 32px; } }
+          width: 58px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .retire-drop {
-          margin: 10px 0px 0px 3px;
-          width: 77px;
           height: 42px;
-          padding-left: 13px; } }
+          margin: 10px 0px 0px 3px;
+          padding-left: 13px;
+          width: 77px; } }
     .second .form-wrapper .name-form-div .fa {
       position: absolute;
       right: 0;
@@ -6710,8 +6710,8 @@ header {
       z-index: -10; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .fa {
-          margin: 0px 0px 0px 5px;
-          font-size: 1.4em; } }
+          font-size: 1.4em;
+          margin: 0px 0px 0px 5px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .fa {
           font-size: 2em; } }
@@ -6761,8 +6761,8 @@ header {
           margin: 15px 0px 0px 41px; } }
     .second .form-wrapper .name-form-div .alarm-font {
       font-size: 1.3em;
-      margin: 37px 0px 0px 0px;
-      letter-spacing: 0.9px; }
+      letter-spacing: 0.9px;
+      margin: 37px 0px 0px 0px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .alarm-font {
           font-size: 0.8em;
@@ -6779,35 +6779,35 @@ header {
           letter-spacing: 0.1px;
           margin: 67px 10px 0px 5px; } }
     .second .form-wrapper .name-form-div .name-form-submit-button {
-      margin: 46px 0px 0px 2px;
-      width: 205px;
-      height: 58px;
       border-radius: 7px;
-      padding-top: 2px;
       font-size: 1.6em;
-      letter-spacing: 0.8px; }
+      height: 58px;
+      letter-spacing: 0.8px;
+      margin: 46px 0px 0px 2px;
+      padding-top: 2px;
+      width: 205px; }
       @media (min-width: 576px) {
         .second .form-wrapper .name-form-div .name-form-submit-button {
-          margin: 33px 0px 0px 3px;
-          width: 124px;
-          height: 35px;
-          font-size: 0.95em;
-          padding-top: 3px;
           border-radius: 3px;
-          letter-spacing: 0px; } }
+          font-size: 0.95em;
+          height: 35px;
+          letter-spacing: 0px;
+          margin: 33px 0px 0px 3px;
+          padding-top: 3px;
+          width: 124px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .name-form-div .name-form-submit-button {
+          height: 36px;
           margin: 34px 0px 0px 0px;
-          width: 129px;
-          height: 36px; } }
+          width: 129px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .name-form-div .name-form-submit-button {
-          margin: 40px 0px 0px -2px;
-          width: 173px;
-          height: 49px;
           font-size: 1.3em;
+          height: 49px;
+          letter-spacing: 0.8px;
+          margin: 40px 0px 0px -2px;
           padding-top: 4px;
-          letter-spacing: 0.8px; } }
+          width: 173px; } }
     .second .form-wrapper .name-form-div .age-error-text {
       color: #df4e60;
       font-size: 1.2em;
@@ -6823,92 +6823,93 @@ header {
           font-size: 1.4em; } }
     .second .form-wrapper .email-form-div .first-things-text {
       font-size: 1.8em;
-      margin: 63px 20px 0px 20px;
       letter-spacing: 1px;
-      line-height: 41px; }
+      line-height: 41px;
+      margin: 63px 20px 0px 20px; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .first-things-text {
           font-size: 1.2em;
-          margin: 34px 0px 0px 0px;
+          letter-spacing: 0.9px;
           line-height: 30px;
-          letter-spacing: 0.9px; } }
+          margin: 34px 0px 0px 0px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .email-form-div .first-things-text {
           font-size: 1.4em;
-          width: 300px;
-          margin: 35px 0px 0px -16px;
+          letter-spacing: 1.2px;
           line-height: 32px;
-          letter-spacing: 1.2px; } }
+          margin: 35px 0px 0px -16px;
+          width: 300px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .email-form-div .first-things-text {
           font-size: 2em;
-          width: 445px;
-          margin: 41px 0px 0px 5px;
+          letter-spacing: 0.7px;
           line-height: 41px;
-          letter-spacing: 0.7px; } }
+          margin: 41px 0px 0px 5px;
+          width: 440px; } }
     .second .form-wrapper .email-form-div .why-create-account-text {
       font-size: 1.2em;
-      margin: 18px 0px 0px 0px;
-      line-height: 34px; }
+      line-height: 34px;
+      margin: 18px 0px 0px 0px; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .why-create-account-text {
           font-size: 0.8em;
-          margin: 7px 9px 0px 9px;
-          line-height: 21px; } }
+          line-height: 21px;
+          margin: 7px 9px 0px 9px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .email-form-div .why-create-account-text {
           font-size: 0.8em;
-          margin: 7px 0px 0px -11px;
           line-height: 22px;
+          margin: 7px 0px 0px -11px;
           width: 290px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .email-form-div .why-create-account-text {
           font-size: 1.2em;
-          margin: 12px 0px 0px 18px;
           line-height: 29px;
+          margin: 12px 0px 0px 18px;
           width: 425px; } }
     .second .form-wrapper .email-form-div .email-input {
-      margin: 57px 0px 0px 0px;
-      width: 303px;
+      font-size: 1.35em;
+      font-weight: 300;
       height: 62px;
-      font-size: 1.45em;
-      padding-top: 0px; }
+      margin: 57px 0px 0px 0px;
+      padding-top: 0px;
+      width: 303px; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .email-input {
-          margin: 49px 0px 0px 0px;
-          width: 235px;
+          font-size: 0.8em;
           height: 38px;
-          font-size: 0.8em; } }
+          margin: 49px 0px 0px 0px;
+          width: 235px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .email-form-div .email-input {
-          margin: 60px 0px 0px 2px;
-          width: 247px;
-          height: 39px;
           font-size: 0.85em;
-          padding-bottom: 2px; } }
+          height: 39px;
+          margin: 60px 0px 0px 2px;
+          padding-bottom: 2px;
+          width: 247px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .email-form-div .email-input {
-          margin: 71px 0px 0px 0px;
-          width: 400px;
-          height: 52px;
           font-size: 1.2em;
-          padding-bottom: 3px; } }
+          height: 52px;
+          margin: 71px 0px 0px 0px;
+          padding-bottom: 3px;
+          width: 400px; } }
     .second .form-wrapper .email-form-div .email-error-div {
-      margin: 0px 20px 0px 20px;
+      position: relative;
       color: #df4e60;
       font-weight: 200;
-      position: relative; }
+      margin: 0px 20px 0px 20px; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .email-error-div {
           margin: 0px 12px 0px 12px; } }
       .second .form-wrapper .email-form-div .email-error-div .email-error-text {
         position: absolute;
-        white-space: nowrap;
         left: 0;
         right: 0;
+        white-space: nowrap;
         font-size: 1.04em;
-        margin: 13px 0px 0px 32px;
-        line-height: 22px; }
+        line-height: 22px;
+        margin: 13px 0px 0px 32px; }
         @media (min-width: 576px) {
           .second .form-wrapper .email-form-div .email-error-div .email-error-text {
             font-size: 0.635em;
@@ -6925,65 +6926,65 @@ header {
         position: absolute;
         left: 0;
         right: 0;
-        width: 25px;
         height: 23px;
-        margin: 10px 0px 0px 2px; }
+        margin: 10px 0px 0px 2px;
+        width: 25px; }
         @media (min-width: 576px) {
           .second .form-wrapper .email-form-div .email-error-div .exclamation {
-            width: 15px;
             height: 15px;
-            margin: 8px 0px 0px 0px; } }
+            margin: 8px 0px 0px 0px;
+            width: 15px; } }
         @media (min-width: 768px) {
           .second .form-wrapper .email-form-div .email-error-div .exclamation {
             margin: 9px 0px 0px 0px; } }
         @media (min-width: 992px) {
           .second .form-wrapper .email-form-div .email-error-div .exclamation {
-            width: 20px;
             height: 20px;
-            margin: 12px 0px 0px 50px; } }
+            margin: 12px 0px 0px 50px;
+            width: 20px; } }
     .second .form-wrapper .email-form-div .email-form-submit-btn {
-      margin: 105px 0px 0px 2px;
-      width: 202px;
-      height: 57px;
       font-size: 1.6em;
-      padding-top: 0px; }
+      height: 57px;
+      margin: 105px 0px 0px 2px;
+      padding-top: 0px;
+      width: 202px; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .email-form-submit-btn {
-          margin: 64px 0px 0px 1px;
-          width: 123px;
-          height: 35px;
           font-size: 0.95em;
-          padding-top: 2px; } }
+          height: 35px;
+          margin: 64px 0px 0px 1px;
+          padding-top: 2px;
+          width: 123px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .email-form-div .email-form-submit-btn {
-          margin: 60px 0px 0px 2px;
-          width: 130px;
-          height: 36px;
           font-size: 1em;
-          padding-top: 3px; } }
+          height: 36px;
+          margin: 60px 0px 0px 2px;
+          padding-top: 3px;
+          width: 130px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .email-form-div .email-form-submit-btn {
-          margin: 73px 0px 0px 1px;
-          width: 173px;
-          height: 49px;
           font-size: 1.4em;
-          padding-top: 4px; } }
+          height: 49px;
+          margin: 73px 0px 0px 1px;
+          padding-top: 4px;
+          width: 173px; } }
     .second .form-wrapper .email-form-div .have-account-text {
-      margin: 16px 0px 0px -1px;
-      letter-spacing: 0.01em; }
+      letter-spacing: 0.01em;
+      margin: 16px 0px 0px -1px; }
       @media (min-width: 576px) {
         .second .form-wrapper .email-form-div .have-account-text {
-          margin: 11px 0px 0px 0px;
+          font-size: 0.57em;
           letter-spacing: 0.01em;
-          font-size: 0.57em; } }
+          margin: 11px 0px 0px 0px; } }
       @media (min-width: 768px) {
         .second .form-wrapper .email-form-div .have-account-text {
-          margin: 12px 0px 0px 2px;
-          font-size: 0.6em; } }
+          font-size: 0.6em;
+          margin: 12px 0px 0px 2px; } }
       @media (min-width: 992px) {
         .second .form-wrapper .email-form-div .have-account-text {
-          margin: 15px 0px 0px 2px;
-          font-size: 0.83em; } }
+          font-size: 0.83em;
+          margin: 15px 0px 0px 2px; } }
   .second .pig-wrapper {
     padding: 0px; }
     @media (min-width: 768px) {
@@ -6996,8 +6997,8 @@ header {
       padding: 0px 10px 0px 10px;
       white-space: nowrap;
       color: #3a3a3a;
-      font-weight: 600;
       font-size: 2.2em;
+      font-weight: 600;
       line-height: 47px;
       text-align-last: justify; }
       @media (min-width: 576px) {
@@ -7009,17 +7010,17 @@ header {
       @media (min-width: 768px) {
         .second .pig-wrapper .checkup-text {
           text-align-last: left;
-          margin: 30px 0px 0px 17px;
           font-size: 3em;
           letter-spacing: 1px;
-          line-height: 56px; } }
+          line-height: 56px;
+          margin: 30px 0px 0px 6px; } }
       @media (min-width: 992px) {
         .second .pig-wrapper .checkup-text {
           font-size: 4.2em;
-          margin: 37px 0px 0px 4px;
-          line-height: 76px;
+          font-weight: 500;
           letter-spacing: 2px;
-          font-weight: 500; } }
+          line-height: 75px;
+          margin: 37px 0px 0px -6px; } }
     .second .pig-wrapper .stacks-text {
       white-space: nowrap;
       font-size: 1.15em;
@@ -7034,7 +7035,7 @@ header {
       @media (min-width: 992px) {
         .second .pig-wrapper .stacks-text {
           font-size: 1.3em;
-          margin: 15px 0px 0px 3px; } }
+          margin: 17px 0px 0px 3px; } }
     .second .pig-wrapper .pig-logo {
       width: 270px;
       height: 125px;
@@ -7044,15 +7045,15 @@ header {
           margin: 41px 0px 0px -28px; } }
       @media (min-width: 992px) {
         .second .pig-wrapper .pig-logo {
-          margin: 64px 0px 0px 1px;
-          width: 430px;
-          height: 193px; } }
+          height: 193px;
+          margin: 66px 0px 0px 4px;
+          width: 430px; } }
 
 .third {
-  border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
-  padding: 56px 0px 41px 0px;
-  max-width: 350px; }
+  border-top: 1px solid #e4e4e4;
+  max-width: 350px;
+  padding: 56px 0px 41px 0px; }
   @media (min-width: 576px) {
     .third {
       max-width: 370px;
@@ -7063,9 +7064,9 @@ header {
       padding: 48px 0px 63px 0px; } }
   @media (min-width: 992px) {
     .third {
-      width: 1078px;
       max-width: 90vw;
-      padding: 48px 0px 104px 0px; } }
+      padding: 48px 0px 104px 0px;
+      width: 1078px; } }
   .third .disclaimer-heading {
     font-size: 2.2em;
     letter-spacing: 1.3px; }
@@ -7085,10 +7086,10 @@ header {
         padding: 61px 0px 2px 1px;
         letter-spacing: 1.5px; } }
   .third .disclaimer-text {
-    padding-top: 8px;
     font-size: 1.05em;
     letter-spacing: 0.75px;
-    line-height: 33px; }
+    line-height: 33px;
+    padding-top: 8px; }
     @media (min-width: 576px) {
       .third .disclaimer-text {
         font-size: 0.6em;
@@ -7107,27 +7108,27 @@ header {
         padding-top: 5px; } }
 
 .fourth {
+  color: #3a3a3a;
   padding: 44px 0px 0px 0px;
-  width: 235px;
-  color: #3a3a3a; }
+  width: 235px; }
   @media (min-width: 576px) {
     .fourth {
-      width: 275px;
-      padding: 49px 0px 0px 5px; } }
+      padding: 49px 0px 0px 5px;
+      width: 275px; } }
   @media (min-width: 768px) {
     .fourth {
-      width: 475px;
+      height: 336px;
       padding: 63px 0px 0px 0px;
-      height: 336px; } }
+      width: 475px; } }
   @media (min-width: 992px) {
     .fourth {
+      height: 480px;
       padding: 113px 0px 0px 10px;
-      width: 675px;
-      height: 480px; } }
+      width: 675px; } }
   .fourth .fourth-over {
     font-size: 1.8em;
-    letter-spacing: 1px;
-    font-weight: 500; }
+    font-weight: 500;
+    letter-spacing: 1px; }
   @media (min-width: 576px) {
     .fourth {
       font-size: 0.6em; } }
@@ -7139,16 +7140,16 @@ header {
       font-size: 1.1em; } }
   .fourth .billion-text {
     font-size: 4.3em;
+    font-weight: 500;
+    letter-spacing: 3px;
     line-height: 97px;
     padding: 6px 0px 0px 0px;
-    position: relative;
-    letter-spacing: 3px;
-    font-weight: 500; }
+    position: relative; }
     @media (min-width: 576px) {
       .fourth .billion-text {
         letter-spacing: 2.5px;
-        padding: 0px 0px 0px 0px;
-        margin: -14px 0px 0px -14px; } }
+        margin: -14px 0px 0px -14px;
+        padding: 0px 0px 0px 0px; } }
     @media (min-width: 768px) {
       .fourth .billion-text {
         font-size: 6.3em;
@@ -7169,78 +7170,78 @@ header {
         .fourth .billion-text .exponent {
           margin: -30px 0px 0px 330px; } }
   .fourth .assets-text {
-    font-size: 1.9em;
-    margin-top: 15px;
-    line-height: 40px;
     border-bottom: 1px solid #e4e4e4;
+    font-size: 1.9em;
+    line-height: 40px;
+    margin-top: 15px;
     padding-bottom: 86px; }
     @media (min-width: 576px) {
       .fourth .assets-text {
         font-size: 1.8em;
-        margin-top: -26px;
         font-weight: 400;
         letter-spacing: 0.3px;
+        margin-top: -26px;
         padding-bottom: 29px; } }
     @media (min-width: 768px) {
       .fourth .assets-text {
-        margin-top: 34px;
-        width: 290px;
+        left: 0;
         letter-spacing: 0.5px;
-        position: absolute;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 34px;
+        padding-bottom: 52px;
+        position: absolute;
         right: 0;
-        left: 0;
-        padding-bottom: 52px; } }
+        width: 290px; } }
     @media (min-width: 992px) {
       .fourth .assets-text {
-        width: 390px;
+        letter-spacing: 0.5px;
         padding: 33px 0px 78px 5px;
-        letter-spacing: 0.5px; } }
+        width: 390px; } }
 
 .fifth {
+  border-bottom: 1px solid #e4e4e4;
   color: #3a3a3a;
-  width: 320px;
   padding-bottom: 48px;
-  border-bottom: 1px solid #e4e4e4; }
+  width: 320px; }
   @media (min-width: 576px) {
     .fifth {
       padding-bottom: 51px; } }
   @media (min-width: 768px) {
     .fifth {
-      width: 545px;
-      padding-bottom: 85px; } }
+      padding-bottom: 85px;
+      width: 545px; } }
   @media (min-width: 992px) {
     .fifth {
-      width: 1100px;
       max-width: 90vw;
-      padding-bottom: 118px; } }
+      padding-bottom: 118px;
+      width: 1100px; } }
   .fifth .fifth-over {
-    margin: 45px 0px 0px 2px;
     font-size: 1.7em;
+    font-weight: 500;
     letter-spacing: 2px;
-    font-weight: 500; }
+    margin: 45px 0px 0px 2px; }
     @media (min-width: 576px) {
       .fifth .fifth-over {
-        margin: 35px 0px 0px 5px;
         font-size: 1em;
-        letter-spacing: 1px; } }
+        letter-spacing: 1px;
+        margin: 35px 0px 0px 5px; } }
     @media (min-width: 768px) {
       .fifth .fifth-over {
-        margin: 53px 0px 0px -2px;
         font-size: 1.5em;
-        letter-spacing: 0.2px; } }
+        letter-spacing: 0.2px;
+        margin: 53px 0px 0px -2px; } }
     @media (min-width: 992px) {
       .fifth .fifth-over {
-        margin: 75px 0px 0px 8px;
         font-size: 1.9em;
-        letter-spacing: 1px; } }
+        letter-spacing: 1px;
+        margin: 75px 0px 0px 8px; } }
   .fifth .large-text {
+    position: relative;
     font-size: 4.3em;
     font-weight: 500;
-    margin: 5px 0px 0px -10px;
     letter-spacing: 3px;
-    position: relative; }
+    margin: 5px 0px 0px -10px; }
     @media (min-width: 576px) {
       .fifth .large-text {
         font-size: 2.6em;
@@ -7249,13 +7250,13 @@ header {
     @media (min-width: 768px) {
       .fifth .large-text {
         font-size: 5.2em;
-        margin: 3px 0px 0px 0px;
-        letter-spacing: 1px; } }
+        letter-spacing: 1px;
+        margin: 3px 0px 0px 0px; } }
     @media (min-width: 992px) {
       .fifth .large-text {
         font-size: 6.7em;
-        margin: 8px 0px 0px 17px;
-        letter-spacing: 5px; } }
+        letter-spacing: 5px;
+        margin: 8px 0px 0px 17px; } }
     .fifth .large-text .exponent {
       margin: 4px 0px 0px -3px; }
       @media (min-width: 576px) {
@@ -7274,56 +7275,56 @@ header {
     @media (min-width: 576px) {
       .fifth .analyzed-text {
         font-size: 1em;
-        margin: 5px 0px 0px 4px;
-        letter-spacing: 0.9px; } }
+        letter-spacing: 0.9px;
+        margin: 5px 0px 0px 4px; } }
     @media (min-width: 768px) {
       .fifth .analyzed-text {
         font-size: 1.5em;
-        margin: 17px 0px 0px -3px;
-        letter-spacing: 0.2px; } }
+        letter-spacing: 0.2px;
+        margin: 17px 0px 0px -3px; } }
     @media (min-width: 992px) {
       .fifth .analyzed-text {
         font-size: 1.9em;
-        margin: 28px 0px 0px 7px;
-        letter-spacing: 1px; } }
+        letter-spacing: 1px;
+        margin: 28px 0px 0px 7px; } }
 
 .sixth {
-  width: 320px;
-  height: 434px; }
+  height: 434px;
+  width: 320px; }
   @media (min-width: 576px) {
     .sixth {
-      width: 370px;
-      height: 223px; } }
+      height: 223px;
+      width: 370px; } }
   @media (min-width: 768px) {
     .sixth {
-      width: 500px;
-      height: 301px; } }
+      height: 301px;
+      width: 500px; } }
   @media (min-width: 992px) {
     .sixth {
-      width: 962px;
-      height: 263px; } }
+      height: 263px;
+      width: 962px; } }
   .sixth .employees-text {
     font-size: 2em;
     letter-spacing: 1.7px;
-    margin: 48px 0px 0px 0px;
-    line-height: 44px; }
+    line-height: 44px;
+    margin: 48px 0px 0px 0px; }
     @media (min-width: 576px) {
       .sixth .employees-text {
         font-size: 1.2em;
+        letter-spacing: 0.9px;
         line-height: 27px;
-        margin: 42px 0px 0px 0px;
-        letter-spacing: 0.9px; } }
+        margin: 42px 0px 0px 0px; } }
     @media (min-width: 768px) {
       .sixth .employees-text {
         font-size: 1.9em;
+        letter-spacing: 1.8px;
         line-height: 42px;
-        margin: 72px 0px 0px 0px;
-        letter-spacing: 1.8px; } }
+        margin: 72px 0px 0px 0px; } }
     @media (min-width: 992px) {
       .sixth .employees-text {
         font-size: 2.55em;
-        margin: 108px 0px 0px 10px;
-        letter-spacing: 2.8px; } }
+        letter-spacing: 2.8px;
+        margin: 108px 0px 0px 10px; } }
   .sixth .logos-wrapper {
     margin: 40px 0px 0px 0px; }
     @media (min-width: 992px) {
@@ -7335,89 +7336,89 @@ header {
     .sixth .logos-wrapper .logo {
       position: absolute; }
     .sixth .logos-wrapper .linkedin-logo {
-      width: 137px;
-      margin: 3px 0px 0px -10px; }
+      margin: 3px 0px 0px -10px;
+      width: 137px; }
       @media (min-width: 576px) {
         .sixth .logos-wrapper .linkedin-logo {
-          width: 83px;
-          margin: 6px 0px 0px -5px; } }
+          margin: 6px 0px 0px -5px;
+          width: 83px; } }
       @media (min-width: 768px) {
         .sixth .logos-wrapper .linkedin-logo {
-          width: 88px;
-          margin: 9px 0px 0px 50px; } }
+          margin: 9px 0px 0px 50px;
+          width: 88px; } }
       @media (min-width: 992px) {
         .sixth .logos-wrapper .linkedin-logo {
           margin: 0px 0px 0px 2px;
           width: 122px; } }
     .sixth .logos-wrapper .amazon-logo {
-      width: 150px;
-      margin: 3px 0px 0px 150px; }
+      margin: 3px 0px 0px 150px;
+      width: 150px; }
       @media (min-width: 576px) {
         .sixth .logos-wrapper .amazon-logo {
-          width: 90px;
-          margin: 6px 0px 0px 151px; } }
+          margin: 6px 0px 0px 151px;
+          width: 90px; } }
       @media (min-width: 768px) {
         .sixth .logos-wrapper .amazon-logo {
-          width: 95px;
-          margin: 10px 0px 0px 214px; } }
+          margin: 10px 0px 0px 214px;
+          width: 95px; } }
       @media (min-width: 992px) {
         .sixth .logos-wrapper .amazon-logo {
           margin: 0px 0px 0px 226px;
           width: 129px; } }
     .sixth .logos-wrapper .apple-logo {
-      width: 52px;
-      margin: 83px 0px 0px 21px; }
+      margin: 83px 0px 0px 21px;
+      width: 52px; }
       @media (min-width: 576px) {
         .sixth .logos-wrapper .apple-logo {
-          width: 33px;
-          margin: -3px 0px 0px 313px; } }
+          margin: -3px 0px 0px 313px;
+          width: 33px; } }
       @media (min-width: 768px) {
         .sixth .logos-wrapper .apple-logo {
-          width: 34px;
-          margin: -1px 0px 0px 384px; } }
+          margin: -1px 0px 0px 384px;
+          width: 34px; } }
       @media (min-width: 992px) {
         .sixth .logos-wrapper .apple-logo {
           margin: -14px 0px 0px 460px;
           width: 46px; } }
     .sixth .logos-wrapper .cisco-logo {
-      width: 116px;
-      margin: 87px 0px 0px 153px; }
+      margin: 87px 0px 0px 153px;
+      width: 116px; }
       @media (min-width: 576px) {
         .sixth .logos-wrapper .cisco-logo {
-          width: 70px;
-          margin: 51px 0px 0px 78px; } }
+          margin: 51px 0px 0px 78px;
+          width: 70px; } }
       @media (min-width: 768px) {
         .sixth .logos-wrapper .cisco-logo {
-          width: 73px;
-          margin: 69px 0px 0px 116px; } }
+          margin: 69px 0px 0px 116px;
+          width: 73px; } }
       @media (min-width: 992px) {
         .sixth .logos-wrapper .cisco-logo {
           margin: -10px 0px 0px 610px;
           width: 100px; } }
     .sixth .logos-wrapper .oracle-logo {
-      width: 140px;
-      margin: 192px 0px 0px 75px; }
+      margin: 192px 0px 0px 75px;
+      width: 140px; }
       @media (min-width: 576px) {
         .sixth .logos-wrapper .oracle-logo {
-          width: 88px;
-          margin: 62px 0px 0px 220px; } }
+          margin: 62px 0px 0px 220px;
+          width: 88px; } }
       @media (min-width: 768px) {
         .sixth .logos-wrapper .oracle-logo {
-          width: 88px;
-          margin: 81px 0px 0px 265px; } }
+          margin: 81px 0px 0px 265px;
+          width: 88px; } }
       @media (min-width: 992px) {
         .sixth .logos-wrapper .oracle-logo {
           margin: 1px 0px 0px 815px;
           width: 123px; } }
 
 .footer {
+  position: relative;
   border-top: 1px solid #e4e4e4;
-  width: 100vw;
-  position: relative; }
+  width: 100vw; }
   @media (min-width: 576px) {
     .footer {
-      width: 405px;
-      max-width: 90vw; } }
+      max-width: 90vw;
+      width: 405px; } }
   @media (min-width: 768px) {
     .footer {
       width: 575px; } }
@@ -7433,8 +7434,8 @@ header {
         margin: 8px 0px 0px 0px; } }
     @media (min-width: 768px) {
       .footer .numbers-text {
-        margin: 9px 0px 0px 0px;
-        letter-spacing: 0.1px; } }
+        letter-spacing: 0.1px;
+        margin: 9px 0px 0px 0px; } }
     @media (min-width: 992px) {
       .footer .numbers-text {
         font-size: 0.7em;
@@ -7454,15 +7455,15 @@ header {
         font-size: 0.7em;
         margin: 17px 0px 0px 20px; } }
     .footer .copyright-text .copy-symbol {
-      font-size: 1.4em;
       position: absolute;
+      font-size: 1.4em;
       left: 0;
-      right: 0;
-      margin: -6px 0px 0px -130px; }
+      margin: -6px 0px 0px -130px;
+      right: 0; }
       @media (min-width: 576px) {
         .footer .copyright-text .copy-symbol {
-          margin: -4px 0px 0px -68px;
-          font-size: 1.5em; } }
+          font-size: 1.5em;
+          margin: -4px 0px 0px -68px; } }
       @media (min-width: 768px) {
         .footer .copyright-text .copy-symbol {
           font-size: 1.6em;
