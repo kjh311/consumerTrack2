@@ -6354,8 +6354,7 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 .mockup {
-  z-index: -10;
-  opacity: 0.5;
+  z-index: 10;
   position: absolute;
   top: 0;
   margin-left: auto;
@@ -6412,6 +6411,9 @@ select {
     select {
       border-radius: 5px;
       border: 1px solid #e4e4e4; } }
+
+input:focus {
+  color: #8e8e8e; }
 
 select::-ms-expand {
   display: none; }
@@ -6822,6 +6824,7 @@ header {
         .second .form-wrapper .name-form-div .age-error-text {
           font-size: 1.4em; } }
     .second .form-wrapper .email-form-div .first-things-text {
+      color: #3a3a3a;
       font-size: 1.8em;
       letter-spacing: 1px;
       line-height: 41px;
@@ -7066,6 +7069,7 @@ header {
       padding: 48px 0px 104px 0px;
       width: 1078px; } }
   .third .disclaimer-heading {
+    color: #3a3a3a;
     font-size: 2.2em;
     letter-spacing: 1.3px; }
     @media (min-width: 576px) {
@@ -7302,6 +7306,7 @@ header {
       height: 263px;
       width: 962px; } }
   .sixth .employees-text {
+    color: #3a3a3a;
     font-size: 2em;
     letter-spacing: 1.7px;
     line-height: 44px;

@@ -1,6 +1,6 @@
 @import "../bootstrap/scss/bootstrap";
 @import "mockup";
-// @import "reset";
+
 
 //////////
 //Colors//
@@ -14,7 +14,6 @@ $unvalidated-color: #d0d0d0;
 $unvalidated-hover: #9e9e9e;
 $validated-color: #79b74d;
 $validated-hover: #60913d;
-
 
 
 a,
@@ -70,6 +69,10 @@ select {
         border-radius: 5px;
         border: 1px solid $border-color;
     }
+}
+
+input:focus{
+	color: $light-font;
 }
 
 select::-ms-expand {
@@ -392,7 +395,6 @@ header {
                     width: 77px;
                 }
             }
-
             .fa {
                 position: absolute;
                 right: 0;
@@ -520,11 +522,13 @@ header {
                 }
             }
         } 
+
 //////////////
 //EMAIL FORM//
 //////////////
         .email-form-div {
             .first-things-text {
+            	color: $dark-font;
                 font-size: 1.8em;
                 letter-spacing: 1px;
                 line-height: 41px;
@@ -740,7 +744,6 @@ header {
             }
         }
         .stacks-text {
-        	// white-space: nowrap;
             font-size: 1.15em;
             text-align-last: justify;
             @include media-breakpoint-up(sm) {
@@ -793,6 +796,7 @@ header {
         width: 1078px;
     }
     .disclaimer-heading {
+    	color: $dark-font;
         font-size: 2.2em;
         letter-spacing: 1.3px;
         @include media-breakpoint-up(sm) {
@@ -1051,6 +1055,7 @@ header {
         width: 962px;
     }
     .employees-text {
+    	color: $dark-font;
         font-size: 2em;
         letter-spacing: 1.7px;
         line-height: 44px;

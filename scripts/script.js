@@ -82,13 +82,9 @@ function addRedBorderYearDrop(){
 function removeEmailInputBorder(){
 	var emailInput = document.getElementById('email-input');
 	var acountExistsWarning = document.getElementById("email-error-div");
-	// if (emailInput.validity) {
-       // if (emailInput.validity.valid === true) {
          emailInput.style.borderColor = "#e4e4e4"
          if(!acountExistsWarning.classList.contains("invisible")){
 			acountExistsWarning.classList.add("invisible");
-		// }
-       // }
     }
 }
 

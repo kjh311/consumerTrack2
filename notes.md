@@ -10,7 +10,15 @@ NOTES FROM 1ST ATTEMPT:
 	changed all selectors to class
 
 -Loaded CSS out of order so he had to use !important entirely too much
-	CSS in order using @include media-breakpoint-up()
+	CSS in order using nested @include media-breakpoint-up(), instead of using media queries at the end.
 
 -Barely used Bootstrap
 	tried to utilize Bootstrap Utility Classes as much as possible.
+
+
+*BONUS, all working:
+	•	Error handling on form validation for field types
+	•	First Name - No Spaces and only letters
+	•	DOB - At least 18 years old
+	•	Email Address - Valid email
+	•	Displaying a visual indication to the user of the error and message
