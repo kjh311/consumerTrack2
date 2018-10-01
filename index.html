@@ -23,7 +23,7 @@
     <!-- <img src="mockups/tablet_Email.png" alt="" class="mockup"> -->
     <!-- <img src="mockups/tablet_Error.png" alt="" class="mockup"> -->
     <!-- <img src="mockups/tablet_Success.png" alt="" class="mockup"> -->
-    <!-- <img src="mockups/large_Mobile_Name.png" alt="" class="mockup"> -->
+    <img src="mockups/large_Mobile_Name.png" alt="" class="mockup">
     <!-- <img src="mockups/large_Mobile_Email.png" alt="" class="mockup"> -->
     <!-- <img src="mockups/large_Mobile_Error.png" alt="" class="mockup"> -->
     <!-- <img src="mockups/large_Mobile_Success.png" alt="" class="mockup"> -->
@@ -38,7 +38,7 @@
     		<div class="col-12 col-lg-6 d-flex header-logos justify-content-center justify-content-lg-start">
     			<img class="bloom-logo" src="assets/blooom-logo.svg" alt="bloom logo">
     		</div>
-    		<div class="col-12 col-lg-6 d-flex header-logos banking justify-content-center justify-content-lg-end">
+    		<div class="header-logos col-12 col-lg-6 d-flex banking justify-content-center justify-content-lg-end">
     			<img class="rates-logo" src="assets/logo-bankingRates.png" alt="banking rates logo">
     		</div>
         </div>
@@ -51,11 +51,10 @@
 			<div class="form-wrapper col-12 col-md-6 order-2 order-md-1 ">
 
 <!-- NAME FORM -->
-				<div id="name-form-div" class="name-form-div d-block">
+				<div id="name-form-div" class="name-form-div d-none">
 					<p class="esp-text text-justify">We'd fill this out for you,<br> but we don't have E.S.P.</p>
 
-					<form action="" class="name-form text-center"   name="infoForm" onsubmit="validateNameForm();return false;">
-
+					<form action="" class="name-form text-center" name="infoForm" onsubmit="validateNameForm();return false;">
 						
 						<p class="first-name-text">My first name is...</p>
 
@@ -292,21 +291,23 @@
 				</div>
 
 <!-- EMAIL FORM -->
-				<div id="email-form-div" class="email-form-div d-none">
+				<div id="email-form-div" class="email-form-div d-block">
 					<p class="first-things-text text-center">First things first, lets make sure we keep you safe.</p>
 					<p class="why-create-account-text text-center">Why do you need to create an account?
-					<br class="d-none d-md-block">
+						<br class="d-none d-md-block">
 					 Easy. Safety first kids. Plus, if you get distacted (i.e. your boss walks past your desk), you can pick up right 
-					 <br class="d-none d-sm-block d-md-none">
+						<br class="d-none d-sm-block d-md-none">
 					where you left off.</p>
 
-					<form id="email-form" class="email-form" action="" method="" accept-charset="utf-8"  onsubmit="return validateEmailForm();return false;">
+					<form id="email-form" class="email-form" accept-charset="utf-8"  onsubmit="return validateEmailForm();return false;">
 						<div class="d-flex justify-content-center">
 							<input oninvalid="addRedBorderEmail()" id="email-input" class="email-input text-center" type="email" name="Email address" placeholder="Email address"  required onkeyup="removeEmailInputBorder()">
 						</div>
 						<div id="email-error-div" class="email-error-div d-flex justify-content-center invisible">
 								<img class="exclamation" src="assets/exclamation.png" alt="exclamation sign">
-								<p class="email-error-text">Looks like this account already <br class="d-block d-sm-none"> exist, <a href="" class="sign-in" title="">Sign In.</a></p>
+								<p class="email-error-text">Looks like this account already 
+									<br class="d-block d-sm-none"> 
+									exist, <a href="" class="sign-in" title="">Sign In.</a></p>
 							</div>
 						<div class="d-flex justify-content-center">
 							</ br>
@@ -321,9 +322,10 @@
 
 <!-- PIG-WRAPPER -->
 			<div class="pig-wrapper col-12 col-md-6 order-1 order-md-2">
-				<p class="checkup-text text-justify text-sm-center text-md-left">Start Your<br class="d-none d-md-block d-lg-none"> Truly<br class="d-none d-lg-block"> Free<br class="d-block d-sm-none d-md-block d-lg-none"> 401k<br class="d-none d-sm-block"> Check-Up<br class="d-none d-md-block d-lg-none"> Now</p>
+				<p class="checkup-text text-justify text-sm-center text-md-left">Start Your Truly Free 401k Check-Up Now
+				</p>
 				<p class="stacks-text d-flex justify-content-center text-center justify-content-md-start ">See how your 401k stacks up in minutes</p>
-				<div class="pig-logo-wrapper d-flex justify-content-center ">
+				<div class="pig-logo-wrapper d-flex justify-content-center">
 					<img class="pig-logo d-none d-md-block" src="assets/pig-plain.png" alt="pig logo">
 				</div>
 			</div>
@@ -333,7 +335,9 @@
 <!-- THIRD CONTAINER -->
 	<div class="container-fluid third">
 		<p class="disclaimer-heading">Disclaimer</p>
-		<p class="disclaimer-text">Thanks for visiting blooom from an affiliate partner. Blooom is a Registered Investment Advisor with the Securities and Exchanges Commission. You can find out more information about our service in our <a href="">Brochure</a>, which you can access here or through the SEC. Blooom and our affiliate partners are independant of each other and do not have an agency or employment relationship. We do have a marketing arrangement, paying our affiliate partners up to $70 if you enter into a paying relationship for advisory services with blooom. No additional fees or other amounts will be added to the regular fees, expenses or other costs of your service as a result of the affiliate partner's involvement. By clicking any of the above bottons, you acknowledge receipt of this information and the <a href="">Brochure</a>. By signing up, you agree to our <a href="">Terms <br class="d-none d-sm-block d-md-none">and Conditions</a> and <a href="">Privacy Policy</a>. You can also elect to receive updates, newsletters and offers from blooom, inc.</p>
+		<p class="disclaimer-text">Thanks for visiting blooom from an affiliate partner. Blooom is a Registered Investment Advisor with the Securities and Exchanges Commission. You can find out more information about our service in our <a href="">Brochure</a>, which you can access here or through the SEC. Blooom and our affiliate partners are independant of each other and do not have an agency or employment relationship. We do have a marketing arrangement, paying our affiliate partners up to $70 if you enter into a paying relationship for advisory services with blooom. No additional fees or other amounts will be added to the regular fees, expenses or other costs of your service as a result of the affiliate partner's involvement. By clicking any of the above bottons, you acknowledge receipt of this information and the <a href="">Brochure</a>. By signing up, you agree to our <a href="">Terms 
+			<br class="d-none d-sm-block d-md-none">
+		and Conditions</a> and <a href="">Privacy Policy</a>. You can also elect to receive updates, newsletters and offers from blooom, inc.</p>
 	</div>
 
 <!-- FOURTH CONTAINER -->

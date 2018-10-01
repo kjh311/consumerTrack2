@@ -6995,7 +6995,6 @@ header {
         max-width: 490px; } }
     .second .pig-wrapper .checkup-text {
       padding: 0px 10px 0px 10px;
-      white-space: nowrap;
       color: #3a3a3a;
       font-size: 2.2em;
       font-weight: 600;
@@ -7022,7 +7021,6 @@ header {
           line-height: 75px;
           margin: 37px 0px 0px -6px; } }
     .second .pig-wrapper .stacks-text {
-      white-space: nowrap;
       font-size: 1.15em;
       text-align-last: justify; }
       @media (min-width: 576px) {

@@ -39,7 +39,6 @@ function validateNameForm() {
 
 
 function validateEmailForm(){
-
 	var emailInput = document.getElementById('email-input');
 	var emailAddress = document.getElementById('email-input').value;
 	var acountExistsWarning = document.getElementById("email-error-div");

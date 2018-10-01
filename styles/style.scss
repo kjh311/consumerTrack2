@@ -713,7 +713,6 @@ header {
         }
         .checkup-text {
         	padding: 0px 10px 0px 10px;
-        	white-space: nowrap;
             color: $dark-font;
             font-size: 2.2em;
             font-weight: 600;
@@ -741,7 +740,7 @@ header {
             }
         }
         .stacks-text {
-        	white-space: nowrap;
+        	// white-space: nowrap;
             font-size: 1.15em;
             text-align-last: justify;
             @include media-breakpoint-up(sm) {
