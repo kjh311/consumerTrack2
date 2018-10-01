@@ -1,3 +1,4 @@
+
 function validateNameForm() {
 
 	var yearDrop = document.getElementById("year-drop");
@@ -17,14 +18,6 @@ function validateNameForm() {
 	var emailWrapper = document.getElementById("email-form-div");
 	var errorText = document.getElementById("age-error-text");
 
-
-	function calculate_age(dob) { 
-	    var diff_ms = Date.now() - dob.getTime();
-	    var age_dt = new Date(diff_ms); 
-	  
-	    return Math.abs(age_dt.getUTCFullYear() - 1970);
-	}
-
 	if(calculate_age(new Date(bornYear, bornMonth, bornDay)) < 18){
 		errorText.classList.remove("d-none"); 
     	errorText.classList.add("d-block"); 
@@ -37,6 +30,11 @@ function validateNameForm() {
     emailWrapper.classList.add("d-block"); 
 }
 
+function calculate_age(dob) { 
+	    var diff_ms = Date.now() - dob.getTime();
+	    var age_dt = new Date(diff_ms); 
+	    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
 
 function validateEmailForm(){
 	var emailInput = document.getElementById('email-input');
@@ -76,8 +74,8 @@ function addRedBorderYearDrop(){
 	var yearDropSelect = document.getElementById('year-drop');
 	    yearDropSelect.style.borderColor = "#df4e60"
 	    yearDropSelect.setCustomValidity('Please select a year')
-
 }
+
 
 function removeEmailInputBorder(){
 	var emailInput = document.getElementById('email-input');

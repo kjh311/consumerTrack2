@@ -7,13 +7,13 @@ NOTES FROM 1ST ATTEMPT:
 -Accurate representation of mockup
 
 -Heavy use of ID selectors
-	changed all selectors to class
+	Changed all selectors to use class
 
 -Loaded CSS out of order so he had to use !important entirely too much
-	CSS in order using nested @include media-breakpoint-up(), instead of using media queries at the end.
+	CSS in order using nested @include media-breakpoint-up(), instead of using media queries at the end. Don't use !important anymore.
 
 -Barely used Bootstrap
-	tried to utilize Bootstrap Utility Classes as much as possible.
+	Tried to utilize Bootstrap Utility Classes as much as possible.
 
 
 *BONUS, all working:
